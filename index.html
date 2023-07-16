@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="Imagenes/UntrefSchool.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú lateral responsive - MagtimusPro</title>
+    <title>UntrefSchool</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
-<body id="body">
+<body id="body"onload="mostrarSeccion('quienes-somos-section')"></body>
     
     <header class="header">
         <div class="icon__menu">
@@ -27,55 +28,48 @@
             <h4>UntrefSchool</h4>
         </div>
 
-        <div class="options__menu">	
-
-            <a href="#" class="selected">
+        <div class="options__menu">
+            <a href="#" onclick="mostrarSeccion('quienes-somos-section')">
                 <div class="option">
                     <i class="fa-solid fa-person-chalkboard" title="Quienes somos"></i>
                     <h4>Quienes somos</h4>
                 </div>
             </a>
-            
-
-            <a href="#">
+        
+            <a href="#" onclick="mostrarSeccion('elegirnos-section')">
                 <div class="option">
                     <i class="fa fa-handshake-o" title="¿Por qué elegirnos?"></i>
                     <h4>¿Por qué elegirnos?</h4>
                 </div>
             </a>
-            
-            <a href="#">
+        
+            <a href="#" onclick="mostrarSeccion('propuesta-educativa-section')">
                 <div class="option">
                     <i class="fa fa-american-sign-language-interpreting" title="Propuesta educativa"></i>
                     <h4>Propuesta educativa</h4>
                 </div>
             </a>
-
-            <a href="#">
+        
+            <a href="#" onclick="mostrarSeccion('ultimas-noticias-section')">
                 <div class="option">
                     <i class="fa fa-leanpub" title="Últimas noticias"></i>
                     <h4>Últimas noticias</h4>
                 </div>
             </a>
-
-            <a href="#">
+        
+            <a href="#" onclick="mostrarSeccion('contacto-section')">
                 <div class="option">
                     <i class="fa fa-address-card-o" title="Contactos"></i>
                     <h4>Contacto</h4>
                 </div>
             </a>
-
-            
-
         </div>
 
     </div>
 
     <main>
     
-        <section>
-          <div class="contenido-1">
-            
+        <section id="quienes-somos-section" class="section">
             <div class="text">
                 <img class="imagen-1" src="https://github.com/HectorDanielAyarachiFuentes/prueba-/blob/main/Imagenes/UntrefSchool%20-%20institucional.jpg?raw=true" alt="Ilustración del proyecto" />
              
@@ -96,11 +90,43 @@
               <p>¡Estamos emocionados de tener la oportunidad de ser parte del viaje educativo de su hijo/a en UntrefSchool! Juntos, crearemos un ambiente estimulante donde cada niño pueda aprender, crecer y alcanzar su máximo potencial.</p>
               
               <p>¡Bienvenidos a UntrefSchool, donde aprender es divertido y emocionante!</p>
-              
-              
             </div>
-          </div>
         </section>
+
+        <section id="elegirnos-section" class="section">
+            <div class="flex-container card">
+                <img class="my-image1" src="https://github.com/HectorDanielAyarachiFuentes/prueba-/blob/main/Imagenes/UntrefSchool%20-%20institucional.jpg?raw=true" alt="Ilustración del proyecto" />
+                <div class="text">
+                    <h3>Colombia</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio totam fugiat sed consequatur laboriosam, error veritatis cum deserunt numquam sint asperiores? Laborum doloribus aspernatur id voluptatibus architecto, a voluptatum beatae amet nesciunt veritatis facilis numquam.</p>
+                </div>
+            </div>
+        </section>
+        
+       
+        <section id="propuesta-educativa-section" class="section">
+            <div class="text">
+                
+                <h2>Propuesta educativa</h2>
+                <p>Texto de la sección "elegirnos".</p>
+            </div>
+        </section>
+       
+        <section id="ultimas-noticias-section" class="section">
+            <div class="text">
+                <h2>ultimas-noticias-section</h2>
+                <p>Texto de la sección "ultimas-noticias-section".</p>
+            </div>
+        </section>
+       
+        <section id="contacto-section" class="section">
+            <div class="text">
+                <h2>contacto-section</h2>
+                <p>Texto de la sección "contacto-section".</p>
+            </div>
+        </section>
+
+
 
 <main>
     <script src="script.js"></script>
