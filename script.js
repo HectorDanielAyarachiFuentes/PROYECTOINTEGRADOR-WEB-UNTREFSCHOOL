@@ -37,3 +37,22 @@ window.addEventListener("resize", function(){
     }
 
 });
+
+
+window.onscroll = function() { // Cuando se realiza el scroll
+    var scrollToTopButton = document.getElementById("scroll-to-top");
+    
+    if (window.pageYOffset > 0) { // Si se ha desplazado hacia abajo
+      scrollToTopButton.style.display = "block"; // Mostrar la flecha
+    } else { // Si está en la parte superior de la página
+      scrollToTopButton.style.display = "none"; // Ocultar la flecha
+    }
+  };
+  
+  function scrollToTop() { // Función para desplazarse hacia arriba al hacer clic en la flecha
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+  
