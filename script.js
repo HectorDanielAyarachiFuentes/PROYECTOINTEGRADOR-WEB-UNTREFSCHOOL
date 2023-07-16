@@ -56,3 +56,14 @@ window.onscroll = function() { // Cuando se realiza el scroll
     });
   }
   
+
+  function mostrarSeccion(id) {
+    var secciones = document.getElementsByClassName("section");
+    for (var i = 0; i < secciones.length; i++) {
+        if (secciones[i].id === id) {
+            secciones[i].classList.remove("hidden");
+        } else {
+            secciones[i].classList.add("hidden");
+        }
+    }
+}
