@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido a UntrefSchool</title>
+    <title>Menú lateral responsive - MagtimusPro</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -12,11 +12,13 @@
 </head>
 <body id="body">
     
-    <header>
+    <header class="header">
         <div class="icon__menu">
-            <i class="fas fa-bars" id="btn_open"></i>
+          <i class="fas fa-bars" id="btn_open" aria-hidden="true"></i>
         </div>
-    </header>
+        <h1 class="titulo">UntrefSchool</h1>
+      </header>
+      
 
     <div class="menu__side" id="menu_side">
 
@@ -100,6 +102,23 @@
           </div>
         </section>
 
+<main>
+    <script src="script.js"></script>
+
+    <footer>
+        <p>Derechos reservados &copy; 2023 UntrefSchool</p>
+
+        <button id="scroll-to-top" style="display: block;">↑</button>
+        <script>
+            document.querySelector('#scroll-to-top').addEventListener('click', function() {
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              });
+            });
+          </script>    
+</body>
+</html>
 <main>
     <script src="script.js"></script>
 </body>
