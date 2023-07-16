@@ -233,7 +233,7 @@ footer {
     padding: 10px;
     text-align: center;
     font-size: 14px; /* Ajusta el tamaño de fuente según sea necesario */
-    z-index: 20; /* Asegura que el footer esté por encima del header */
+    z-index: 999; /* Asegura que el footer esté por encima del header */
   }
 
   /* Estilos de la flecha de scroll hacia arriba */
@@ -256,3 +256,80 @@ footer {
   #scroll-to-top.show {
     display: block;
   }
+
+  .hidden {
+    display: none;
+}
+
+
+/* Estilos cards */
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.my-image1 {
+    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    margin-right: 10px; /* Ajusta el margen según tus necesidades */
+}
+
+.text {
+    flex-grow: 1;
+}
+.card {
+    border-radius: 20px;
+    padding: 20px;
+    width: 31.25rem;
+    border: 1px solid #893131;
+    box-shadow: 2px 2px 6px #c30f0f;
+    margin: 20px 10px;
+
+}
+
+/*** Responsive */
+@media(width <48rem){
+    /*Tablets */
+    main{
+        width: 98%;
+    }
+    section{
+        padding:0rem;
+    }
+    section>div{
+        flex-wrap:wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card, .formulario, footer>div{
+        width:100%;
+    }
+    .card{
+        max-width: 31.25rem;
+    }
+    footer>div{
+        margin-bottom: 1.25rem;
+    }
+    footer ul{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contacto{
+        text-align: center;
+    }
+    footer{
+        flex-wrap:wrap;
+        flex-direction: column;
+       
+    }
+    
+}
+@media(width <28.75rem){
+    /*smartphones */
+.bg-header{
+    height: 37.5rem;
+}
+
+}
