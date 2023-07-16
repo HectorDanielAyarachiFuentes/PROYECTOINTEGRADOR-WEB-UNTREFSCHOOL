@@ -30,6 +30,16 @@ header{
     z-index: 200;
 }
 
+.header {
+    text-align: center;
+  }
+  
+  .titulo {
+    display: inline-block;
+  }
+  
+
+
 .icon__menu{
     width: 50px;
     height: 100%;
@@ -211,3 +221,38 @@ a.selected{
     }
   }
   
+
+  /* Estilos del pie de página */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FC7300;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px; /* Ajusta el tamaño de fuente según sea necesario */
+    z-index: 20; /* Asegura que el footer esté por encima del header */
+  }
+
+  /* Estilos de la flecha de scroll hacia arriba */
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #1F8A70;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 999; /* Asegura que la flecha esté por encima de otros elementos */
+  }
+  
+  #scroll-to-top.show {
+    display: block;
+  }
