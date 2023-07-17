@@ -67,3 +67,5 @@ window.onscroll = function() { // Cuando se realiza el scroll
         }
     }
 }
+
+
