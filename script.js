@@ -68,4 +68,8 @@ window.onscroll = function() { // Cuando se realiza el scroll
     }
 }
 
-
+// JavaScript para añadir la clase "small" cuando se haga clic en la imagen
+const image = document.getElementById("footer-image");
+image.addEventListener("click", () => {
+    image.classList.toggle("small");
+});
