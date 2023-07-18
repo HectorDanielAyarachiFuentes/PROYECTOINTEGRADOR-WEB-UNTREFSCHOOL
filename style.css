@@ -489,16 +489,7 @@ footer {
   font-size: 14px;
 }
 
-/* Estilos del pie de página */
-footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: #FC7300;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-}
+
 
 /* Estilos para las redes sociales (izquierda) */
 #redes-sociales {
@@ -512,17 +503,7 @@ footer {
   margin-bottom: 5px; /* Margen entre cada red social */
 }
 
-/* Estilos para el texto de derechos reservados (centro) */
-#derechos-reservados {
-  flex: 2;
-  font-weight: bold; /* Texto de "Derechos reservados" en negrita */
-  margin-right: 220px; /* Margen derecho para separar de los contactos */
-}
 
-/* Ajuste de márgenes para el texto de derechos reservados */
-#derechos-reservados p {
-  margin: 5px 0;
-}
 
 /* Estilos para los contactos (derecha) */
 #contactos {
@@ -584,7 +565,7 @@ i.fa {
     margin-bottom: 10px; /* Margen inferior para separar la imagen de los contactos */
   }
 }
-
+************************************
 /* Media query para 756px o menos */
 @media screen and (max-width: 756px) {
   footer {
@@ -608,13 +589,27 @@ i.fa {
   .contacto {
     margin: 10px 0; /* Márgenes entre los elementos de contacto */
   }
+
+  /* Nuevos estilos para mantener la imagen centrada con el main a 320px */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-image-container img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+  }
 }
 
 /* Estilos para el cuerpo del sitio */
 body {
   margin-left: 80px;
   margin-top: 80px;
-  transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: margin-right 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -626,4 +621,78 @@ body {
   }
 }
 
+*********************************************
+ /*  No soy un codigo soy un Moustruooo pero 
+/* Ajuste de márgenes y separación entre las redes sociales */
+#redes-sociales a {
+  display: block;
+  margin-bottom: 5px; /* Margen entre cada red social */
+}
+
+/* Estilos para el texto de derechos reservados (centro) */
+#derechos-reservados {
+  flex: 2;
+  font-weight: bold; /* Texto de "Derechos reservados" en negrita */
+  margin-right: 220px; /* Margen derecho para separar de los contactos */
+}
+
+/* Ajuste de márgenes para el texto de derechos reservados */
+#derechos-reservados p {
+  margin: 5px 0;
+}
+
+/* Estilos para los contactos (derecha) */
+#contactos {
+  flex: 1;
+  text-align: right; /* Alinea los contactos a la derecha */
+}
+
+/* Ajuste de márgenes para los contactos y teléfonos */
+.contacto {
+  margin: 10px 0;
+}
+
+/* Ajuste de márgenes entre los íconos y los textos de los contactos y teléfonos */
+.contacto i.fa {
+  margin-right: 5px;
+}
+
+/* Estilos de los íconos */
+i.fa {
+  margin-right: 5px;
+}
+
+#contactos .correo {
+  color: blue;
+}
+
+
+
+
+
+/* Estilos para el cuerpo del sitio */
+body {
+  margin-left: 80px;
+  margin-top: 80px;
+  transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
  /*  No soy un codigo soy un Moustruooo pero mejorareeeeeeeeeeeeeee*/
+
+ 
+
+
+
+
+.footer-image-container {
+  margin-left: auto; /* Restablece el margen a 0 al pasar el cursor sobre la imagen */
+}
+
+
+
+
+
+
