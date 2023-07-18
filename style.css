@@ -224,7 +224,7 @@ a.selected{
 
   /* Estilos del pie de página */
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -473,4 +473,157 @@ section {
     object-fit: contain; /* Utilizamos object-fit para ajustar la imagen dentro del cuadro sin distorsión */
   }
   
+ /*  No soy un codigo soy un Moustruooo pero mejorareeeeeeeeeeeeeee*/
+
+
+ 
+
+/* Estilos del pie de página */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FC7300;
+  color: #2b39b6;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Estilos del pie de página */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FC7300;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Estilos para las redes sociales (izquierda) */
+#redes-sociales {
+  flex: 1;
+  text-align: left; /* Alinea las redes sociales a la izquierda */
+}
+
+/* Ajuste de márgenes y separación entre las redes sociales */
+#redes-sociales a {
+  display: block;
+  margin-bottom: 5px; /* Margen entre cada red social */
+}
+
+/* Estilos para el texto de derechos reservados (centro) */
+#derechos-reservados {
+  flex: 2;
+  font-weight: bold; /* Texto de "Derechos reservados" en negrita */
+  margin-right: 220px; /* Margen derecho para separar de los contactos */
+}
+
+/* Ajuste de márgenes para el texto de derechos reservados */
+#derechos-reservados p {
+  margin: 5px 0;
+}
+
+/* Estilos para los contactos (derecha) */
+#contactos {
+  flex: 1;
+  text-align: right; /* Alinea los contactos a la derecha */
+}
+
+/* Ajuste de márgenes para los contactos y teléfonos */
+.contacto {
+  margin: 10px 0;
+}
+
+/* Ajuste de márgenes entre los íconos y los textos de los contactos y teléfonos */
+.contacto i.fa {
+  margin-right: 5px;
+}
+
+/* Estilos de los íconos */
+i.fa {
+  margin-right: 5px;
+}
+
+#contactos .correo {
+  color: blue;
+}
+
+/* Ajuste de márgenes para el texto de derechos reservados y los demás elementos en el centro */
+#derechos-reservados p {
+  margin: 5px 0;
+}
+
+/* Contenedor de la imagen */
+.footer-image-container {
+  position: absolute; /* Posiciona el contenedor en relación con el footer */
+  bottom: 10px; /* Ajusta la posición vertical de la imagen dentro del footer */
+  left: 50%; /* Centra horizontalmente la imagen en el footer */
+  transform: translateX(-50%); /* Centra horizontalmente la imagen en el footer */
+  width: 200px; /* Ajusta el ancho de la imagen según sea necesario */
+}
+
+/* Estilo de la imagen */
+.footer-image-container img {
+  width: 100%; /* Ajusta el ancho de la imagen para que ocupe todo el contenedor */
+  display: block; /* Elimina el espacio debajo de la imagen */
+}
+
+/* Media query para 756px o menos */
+@media screen and (max-width: 756px) {
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    margin-top: 10px; /* Margen superior para separar los contactos de la imagen */
+  }
+
+  .footer-image-container {
+    position: static; /* Vuelve a la posición normal en el flujo del documento */
+    margin-bottom: 10px; /* Margen inferior para separar la imagen de los contactos */
+  }
+}
+
+/* Media query para 756px o menos */
+@media screen and (max-width: 756px) {
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    margin-top: 10px; /* Margen superior para separar los contactos de la imagen */
+  }
+
+  .footer-image-container {
+    position: sticky; /* Vuelve a la posición normal en el flujo del documento */
+    margin-bottom: 10px; /* Margen inferior para separar la imagen de los contactos */
+  }
+
+  /* Ajuste de márgenes para los contactos y teléfonos en pantallas pequeñas */
+  #contactos {
+    text-align: center; /* Centra los contactos en pantallas pequeñas */
+  }
+
+  .contacto {
+    margin: 10px 0; /* Márgenes entre los elementos de contacto */
+  }
+}
+
+/* Estilos para el cuerpo del sitio */
+body {
+  margin-left: 80px;
+  margin-top: 80px;
+  transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Media query para 650px o menos */
+@media screen and (max-width: 650px) {
+  body {
+    margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+    margin-top: 80px; /* Mantiene el margen superior en pantallas más pequeñas */
+  }
+}
+
  /*  No soy un codigo soy un Moustruooo pero mejorareeeeeeeeeeeeeee*/
