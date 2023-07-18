@@ -799,11 +799,11 @@ footer {
   grid-template-columns: repeat(3, );
   gap: 190px;
 }
-
+/* Cambiar el color de los tres grids del footer */
 .item {
   padding: 10px;
   text-align: center;
-  background-color:  #f0ead6 ;
+  background-color:  #fc73 ;
 }
 
 @media (max-width: 768px) {
