@@ -715,7 +715,6 @@ body {
 
 footer-image-container
 /* Estilos para el contenido principal (si tienes contenido principal) */
-}
 
 footer {
   background-color: #c52d2d;
@@ -790,8 +789,32 @@ footer {
   }
 }
 
+footer {
+  background-color: #fc7300;
+  padding: 20px;
+}
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, );
+  gap: 190px;
+}
 
+.item {
+  padding: 10px;
+  text-align: center;
+  background-color:  #f0ead6 ;
+}
+
+@media (max-width: 768px) {
+  /* Cambiar el layout a una columna en dispositivos más pequeños */
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 20px; /* Ajustamos el espacio entre los ítems en dispositivos pequeños */
+    max-width: 500px; /* Ajustamos el ancho máximo de los grids en dispositivos pequeños */
+    margin: 0 auto; /* Centramos los grids horizontalmente en dispositivos pequeños */
+  }
+}
 
 
 
