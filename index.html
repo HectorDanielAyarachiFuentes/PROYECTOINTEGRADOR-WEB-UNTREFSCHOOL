@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <link rel="icon" type="image/png" href="Imagenes/UntrefSchool.png">
@@ -19,7 +19,8 @@
     <div class="icon__menu">
         <i class="fas fa-bars" id="btn_open" aria-hidden="true"></i>
     </div>
-    <h1 class="titulo">UntrefSchool</h1>
+    <a href="#" onclick="mostrarTodasLasSecciones()" class="titulo"><strong>UntrefSchool</strong></a>
+
 </header>
 <div class="menu__side" id="menu_side">
     <div class="name__page">
@@ -28,35 +29,37 @@
     </div>
 
     <div class="options__menu">
-        <a href="#" onclick="mostrarSeccion('quienes-somos-section')">
+        <a href="#quienes-somos-section" onclick="mostrarSeccion('quienes-somos-section')">
             <div class="option">
                 <i class="fa-solid fa-person-chalkboard" title="Quienes somos"></i>
                 <h4>Quienes somos</h4>
             </div>
         </a>
 
-        <a href="#" onclick="mostrarSeccion('elegirnos-section')">
+        <a href="#elegirnos-section" onclick="mostrarSeccion('elegirnos-section')">
             <div class="option">
                 <i class="fa fa-handshake-o" title="¿Por qué elegirnos?"></i>
                 <h4>¿Por qué elegirnos?</h4>
             </div>
         </a>
 
-        <a href="#" onclick="mostrarSeccion('propuesta-educativa-section')">
+        
+            <a href="#propuesta-educativa-section" onclick="scrollSmoothToSection('propuesta-educativa-section')">
+
             <div class="option">
                 <i class="fa fa-american-sign-language-interpreting" title="Propuesta educativa"></i>
                 <h4>Propuesta educativa</h4>
             </div>
         </a>
 
-        <a href="#" onclick="mostrarSeccion('ultimas-noticias-section')">
+        <a href="#ultimas-noticias-section" onclick="mostrarSeccion('ultimas-noticias-section')">
             <div class="option">
                 <i class="fa fa-leanpub" title="Últimas noticias"></i>
                 <h4>Últimas noticias</h4>
             </div>
         </a>
 
-        <a href="#" onclick="mostrarSeccion('contacto-section')">
+        <a href="#contacto-section" onclick="mostrarSeccion('contacto-section')">
             <div class="option">
                 <i class="fa fa-address-card-o" title="Contactos"></i>
                 <h4>Contacto</h4>
@@ -327,6 +330,295 @@
                 });
             });
         </script>
+
+<script>
+    let currentSection = 0; // Índice de la sección actual que se muestra
+  
+    // Función para ocultar todas las secciones excepto la actual
+    function hideSections() {
+      const sections = document.querySelectorAll('main section');
+      sections.forEach((section, index) => {
+        if (index !== currentSection) {
+          section.style.display = 'none';
+        }
+      });
+    }
+  
+    // Función para mostrar una sección específica
+    function showSection(sectionId) {
+      const targetSection = document.getElementById(sectionId);
+      if (targetSection) {
+        currentSection = Array.from(targetSection.parentElement.children).indexOf(targetSection);
+        hideSections();
+        targetSection.style.display = 'block';
+      }
+    }
+  
+    // Función para mostrar todas las primeras cuatro secciones
+    function mostrarTodasLasSecciones() {
+      const sections = document.querySelectorAll('main section');
+      sections.forEach((section, index) => {
+        if (index < 4) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    }
+  
+    // Al cargar la página, mostramos la sección inicial y ocultamos las demás
+    window.onload = () => {
+      hideSections();
+      showSection('quienes-somos-section');
+    };
+  
+    // Mostrar solo las primeras cuatro secciones al hacer clic en el título del header
+    const headerTitle = document.querySelector('.titulo');
+    headerTitle.addEventListener('click', () => {
+      mostrarTodasLasSecciones(); // Mostramos solo las primeras cuatro secciones
+    });
+  
+    // Mostrar la sección correspondiente al hacer clic en los enlaces del menú lateral
+    const menuOptions = document.querySelectorAll('.options__menu a');
+    menuOptions.forEach((option) => {
+      option.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetSectionId = option.getAttribute('href').slice(1);
+        showSection(targetSectionId);
+      });
+    });
+  </script>
+  <script>
+    // Función para desplazarse a la sección correspondiente de manera suave
+    function scrollSmoothToSection(targetSection) {
+      const section = document.getElementById(targetSection);
+      if (section) {
+        section.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
+    }
+  </script>
+ <script>
+    // Resto del código JavaScript
+
+    // Mostrar la sección correspondiente al hacer clic en los enlaces del menú lateral
+    const menuOptions = document.querySelectorAll('.options__menu a');
+    menuOptions.forEach((option) => {
+        option.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetSectionId = option.getAttribute('href').slice(1);
+            showSection(targetSectionId);
+            scrollToTop(); // Llamamos a la función para desplazar el main hacia arriba
+        });
+    });
+
+    // Función para desplazar el main hacia arriba
+    function scrollToTop() {
+        const mainElement = document.querySelector('main');
+        mainElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+</script>
+
+<script>
+    let currentSection = 0; // Índice de la sección actual que se muestra
+
+    // Función para ocultar todas las secciones excepto la actual
+    function hideSections() {
+        const sections = document.querySelectorAll('main section');
+        sections.forEach((section, index) => {
+            if (index !== currentSection) {
+                section.style.display = 'none';
+            }
+        });
+    }
+
+    // Función para mostrar una sección específica
+    function showSection(sectionId) {
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+            currentSection = Array.from(targetSection.parentElement.children).indexOf(targetSection);
+            hideSections();
+            targetSection.style.display = 'block';
+            scrollToTop(); // Llamamos a la función para desplazar el main hacia arriba
+        }
+    }
+
+    // Función para mostrar todas las primeras cuatro secciones
+    function mostrarTodasLasSecciones() {
+        const sections = document.querySelectorAll('main section');
+        sections.forEach((section) => {
+            section.style.display = 'block';
+        });
+        scrollToTop(); // Llamamos a la función para desplazar el main hacia arriba
+    }
+
+    // Al cargar la página, mostramos la sección inicial y ocultamos las demás
+    window.onload = () => {
+        hideSections();
+        showSection('quienes-somos-section');
+    };
+
+    // Mostrar solo las primeras cuatro secciones al hacer clic en el título del header
+    const headerTitle = document.querySelector('.titulo');
+    headerTitle.addEventListener('click', () => {
+        mostrarTodasLasSecciones();
+    });
+
+    // Mostrar la sección correspondiente al hacer clic en los enlaces del menú lateral
+    const menuOptions = document.querySelectorAll('.options__menu a');
+    menuOptions.forEach((option) => {
+        option.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetSectionId = option.getAttribute('href').slice(1);
+            showSection(targetSectionId);
+        });
+    });
+
+    // Función para desplazarse a la sección correspondiente de manera suave
+    function scrollToTop() {
+        const mainElement = document.querySelector('main');
+        mainElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+</script>
+
+<script>
+    let currentSection = 0; // Índice de la sección actual que se muestra
+
+    // Función para ocultar todas las secciones excepto la actual
+    function hideSections() {
+        const sections = document.querySelectorAll('main section');
+        sections.forEach((section, index) => {
+            if (index !== currentSection) {
+                section.style.display = 'none';
+            }
+        });
+    }
+
+    // Función para mostrar una sección específica
+    function showSection(sectionId) {
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+            currentSection = Array.from(targetSection.parentElement.children).indexOf(targetSection);
+            hideSections();
+            targetSection.style.display = 'block';
+            scrollToTop(); // Llamamos a la función para desplazar el main hacia arriba
+        }
+    }
+
+    // Función para mostrar todas las primeras cuatro secciones
+    function mostrarTodasLasSecciones() {
+        const sections = document.querySelectorAll('main section');
+        sections.forEach((section) => {
+            section.style.display = 'block';
+        });
+        scrollToTop(); // Llamamos a la función para desplazar el main hacia arriba
+    }
+
+    // Al cargar la página, mostramos la sección inicial y ocultamos las demás
+    window.onload = () => {
+        hideSections();
+        showSection('quienes-somos-section');
+    };
+
+    // Mostrar solo las primeras cuatro secciones al hacer clic en el título del header
+    const headerTitle = document.querySelector('.titulo');
+    headerTitle.addEventListener('click', () => {
+        mostrarTodasLasSecciones();
+    });
+
+    // Mostrar la sección correspondiente al hacer clic en los enlaces del menú lateral
+    const menuOptions = document.querySelectorAll('.options__menu a');
+    menuOptions.forEach((option) => {
+        option.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetSectionId = option.getAttribute('href').slice(1);
+            showSection(targetSectionId);
+        });
+    });
+
+    // Función para desplazarse a la sección correspondiente de manera suave
+    function scrollToTop() {
+        const mainElement = document.querySelector('main');
+        const headerHeight = document.querySelector('header').offsetHeight;
+        const yOffset = mainElement.getBoundingClientRect().top;
+        const y = yOffset + window.pageYOffset - headerHeight;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+</script>
+
+<script>
+    let currentSection = 0; // Índice de la sección actual que se muestra
+
+    // Función para ocultar todas las secciones excepto la actual
+    function hideSections() {
+        const sections = document.querySelectorAll('main section');
+        sections.forEach((section, index) => {
+            if (index !== currentSection) {
+                section.style.display = 'none';
+            }
+        });
+    }
+
+    // Función para mostrar una sección específica
+    function showSection(sectionId) {
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+            currentSection = Array.from(targetSection.parentElement.children).indexOf(targetSection);
+            hideSections();
+            targetSection.style.display = 'block';
+            scrollToTop(); // Llamamos a la función para desplazar el main hacia arriba
+        }
+    }
+
+    // Función para mostrar todas las primeras cuatro secciones
+    function mostrarTodasLasSecciones() {
+        const sections = document.querySelectorAll('main section');
+        sections.forEach((section) => {
+            section.style.display = 'block';
+        });
+        scrollToTop(); // Llamamos a la función para desplazar el main hacia arriba
+    }
+
+    // Al cargar la página, mostramos la sección inicial y ocultamos las demás
+    window.onload = () => {
+        hideSections();
+        showSection('quienes-somos-section');
+    };
+
+    // Mostrar solo las primeras cuatro secciones al hacer clic en el título del header
+    const headerTitle = document.querySelector('.titulo');
+    headerTitle.addEventListener('click', () => {
+        mostrarTodasLasSecciones();
+    });
+
+    // Mostrar la sección correspondiente al hacer clic en los enlaces del menú lateral
+    const menuOptions = document.querySelectorAll('.options__menu a');
+    menuOptions.forEach((option) => {
+        option.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetSectionId = option.getAttribute('href').slice(1);
+            showSection(targetSectionId);
+        });
+    });
+
+    // Función para desplazarse a la sección correspondiente de manera suave
+    function scrollToTop() {
+        const mainElement = document.querySelector('main');
+        const headerHeight = document.querySelector('header').offsetHeight;
+        const yOffset = mainElement.getBoundingClientRect().top;
+        const y = yOffset + window.pageYOffset - headerHeight;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+</script>
+
+
+
+
+</body>
+  
+
         </body>
 
 </html>
