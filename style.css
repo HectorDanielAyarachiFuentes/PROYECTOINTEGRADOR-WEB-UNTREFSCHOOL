@@ -19,6 +19,10 @@ main {
   padding: 20px;
 }
 
+main {
+  margin-bottom: -100px; /* Ajusta el margen inferior del contenido del main */
+}
+
 header {
   width: 100%;
   height: 80px;
@@ -238,7 +242,10 @@ footer {
   /* Ajusta el tamaño de fuente según sea necesario */
   z-index: 999;
   /* Asegura que el footer esté por encima del header */
+  margin-left: auto;
+  margin-right: 0;
 }
+
 
 /* Estilos de la flecha de scroll hacia arriba */
 #scroll-to-top {
@@ -455,6 +462,14 @@ section {
   margin-top: 20px;
 }
 
+
+
+/* Mantiene la imagen del google maps en su lugar xd */
+.map-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .map-container {
   flex: 1;
   border: 1px solid #ccc;
@@ -462,22 +477,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  margin-top: 20px;
+  /* Agregamos el estilo overflow para ocultar el contenido que supere el tamaño del cuadro */
 }
 
-.map-container a {
-  display: block;
-  text-decoration: none;
-}
 
-.map-container img {
-  max-width: 100%;
-  max-height: 100%;
-}
 
-/*contenedo de la imagen google maps*/
-.container {
-  display: flex;
-}
 
 .contact-container {
   flex: 0 0 300px;
@@ -495,36 +501,12 @@ section {
   margin-top: 20px;
 }
 
-.map-container {
-  flex: 1;
-  border: 1px solid #ccc;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  /* Agregamos el estilo overflow para ocultar el contenido que supere el tamaño del cuadro */
-}
 
-.map-container img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  /* Utilizamos object-fit para ajustar la imagen dentro del cuadro sin distorsión */
-}
+
 
 /*  No soy un codigo soy un Moustruooo pero mejorareeeeeeeeeeeeeee*/
 
-/* Estilos del pie de página */
-footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fc7300;
-  color: #2b39b6;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-}
+
 
 /* Estilos para las redes sociales (izquierda) */
 #redes-sociales {
@@ -716,13 +698,7 @@ body {
 footer-image-container
 /* Estilos para el contenido principal (si tienes contenido principal) */
 
-footer {
-  background-color: #c52d2d;
-  padding: 20px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+
 
 .grid-container {
   display: grid;
@@ -789,11 +765,6 @@ footer {
   }
 }
 
-footer {
-  background-color: #fc7300;
-  padding: 20px;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, );
@@ -803,7 +774,8 @@ footer {
 .item {
   padding: 10px;
   text-align: center;
-  background-color:  #fc73 ;
+  background-color:   #fc73;
+  ;
 }
 
 @media (max-width: 768px) {
@@ -811,10 +783,8 @@ footer {
   .grid-container {
     grid-template-columns: 1fr;
     gap: 20px; /* Ajustamos el espacio entre los ítems en dispositivos pequeños */
-    max-width: 500px; /* Ajustamos el ancho máximo de los grids en dispositivos pequeños */
+   max-width: 500px; /* Ajustamos el ancho máximo de los grids en dispositivos pequeños */
     margin: 0 auto; /* Centramos los grids horizontalmente en dispositivos pequeños */
   }
 }
-
-
 
