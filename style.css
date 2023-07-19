@@ -811,4 +811,32 @@ footer-image-container
   }
 }
 
-  
+  /* Ajuste de posición del título "UntrefSchool" en la vista móvil */
+@media (max-width: 768px) {
+  .titulo {
+    margin-top: 20px; /* Puedes ajustar este valor según sea necesario */
+    margin-bottom: 0;
+  }
+}
+
+
+/* Centrar el título en el medio del contenedor */
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Asegura que ocupa todo el alto del contenedor */
+}
+
+/* Estilo adicional para el texto en negrita */
+.titulo strong {
+  font-weight: bold;
+}
+
+/* Tamaño de fuente más grande para el título */
+.titulo strong {
+  font-size: 24px; /* Puedes ajustar este valor según desees */
+  color: black;
+}
+
+
