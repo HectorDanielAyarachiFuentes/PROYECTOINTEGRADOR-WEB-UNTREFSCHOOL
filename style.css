@@ -242,7 +242,7 @@ footer {
   margin-right: 0;
  
 }
-/* ACA modificamos el tamañaño del footer esa me gusto */
+/* ACA modificamos el tamañaño del footer*/
 main {
   padding: 20px;
   margin-bottom: -75px;
@@ -790,3 +790,25 @@ footer-image-container
   }
 }
 
+/*media queries para que no se pierda el mapa probar varibles, se puedo hacer mejor? si pero es lo que encontre*/
+
+.map-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 320px) {
+  .map-container img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-container iframe {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+  
