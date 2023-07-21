@@ -225,23 +225,21 @@ a.selected {
   }
 }
 
-/* Estilos del pie de página */
+/* Establecer el estilo general del footer */
 footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  position: sticky; /* Fijar la posición del footer */
+  bottom:100; /* Colocar el footer en la parte inferior */
+  right: 50; /* Posicionamos el footer en el margen derecho */
+  width: 100%; /* Aseguramos que el footer ocupe todo el ancho */
+  
   background-color: #fc7300;
   color: #fff;
   padding: 10px;
   text-align: center;
   font-size: 14px;
   /* Ajusta el tamaño de fuente según sea necesario */
-  z-index: 999;
-  /* Asegura que el footer esté por encima del header */
-  margin-left: auto;
-  margin-right: 0;
- 
+  
+  /* Asegura que el footer esté por encima del header z-index: 999; aca no serviria*/
 }
 /* ACA modificamos el tamañaño del footer*/
 main {
