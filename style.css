@@ -16,9 +16,9 @@ body {
 }
 
 
--------------
 
---------------------
+-----------------------
+
 /* Establecer el estilo general del header */
 header {
   width: 100%;
@@ -41,37 +41,11 @@ header.scroll {
 main {
   margin-top: 100px; /* Agregamos un margen superior igual a la altura del header */
 }
-----------
-
-*{
-  border: solid 2px rgb(217, 16, 16);
-}
-
-
--------------------------------------------
-/* Estilo para el título */
+--------------------------
 .titulo {
   display: inline-block;
-  margin-top: -50px; /* Ajustamos el título hacia arriba con un margen negativo de 10px */
-}
-/* Estilo para el ícono del menú */
-#btn_open {
-  position: absolute;
-  top: 90px; /* Mover el ícono hacia arriba */
-  left: 300px; /* Mover el ícono hacia la izquierda */
-
-
-
-}
-section {
-  height: 100vh; /* La sección ocupará toda la altura de la ventana del navegador */
 }
 
-
-
-
------------------------------
-------------------
 .icon__menu {
   width: 50px;
   height: 100%;
