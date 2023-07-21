@@ -15,10 +15,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-
-
-
-
 header {
   width: 100%;
   height: 90px;
@@ -388,7 +384,6 @@ main {
   /* Color para los enlaces de correo electrónico */
 }
 
-
 .derechos {
   color: #000;
   font-weight: bold;
@@ -462,8 +457,6 @@ section {
   margin-top: 20px;
 }
 
-
-
 /* Mantiene la imagen del google maps en su lugar xd */
 .map-container img {
   max-width: 100%;
@@ -482,9 +475,6 @@ section {
   /* Agregamos el estilo overflow para ocultar el contenido que supere el tamaño del cuadro */
 }
 
-
-
-
 .contact-container {
   flex: 0 0 300px;
   margin-right: 20px;
@@ -500,13 +490,6 @@ section {
 .contact-container .contact-form {
   margin-top: 20px;
 }
-
-
-
-
-/*  No soy un codigo soy un Moustruooo pero mejorareeeeeeeeeeeeeee*/
-
-
 
 /* Estilos para las redes sociales (izquierda) */
 #redes-sociales {
@@ -553,10 +536,6 @@ i.fa {
   margin: 5px 0;
 }
 
-
-
-
-
 /* Media query para 756px o menos */
 @media screen and (max-width: 756px) {
   footer {
@@ -570,7 +549,6 @@ i.fa {
 
 
 }
-
 ************************************
 
 /* Media query para 756px o menos */
@@ -616,7 +594,6 @@ i.fa {
     border-radius: 5px;
   }
 }
-
 
 /* Estilos para el cuerpo del sitio */
 body {
@@ -698,8 +675,6 @@ body {
 
 footer-image-container
 /* Estilos para el contenido principal (si tienes contenido principal) */
-
-
 
 .grid-container {
   display: grid;
@@ -818,7 +793,6 @@ footer-image-container
   }
 }
 
-
 /* Centrar el título en el medio del contenedor */
 .titulo {
   display: flex;
@@ -838,11 +812,9 @@ footer-image-container
   color: black;
 }
 
-
 main {
   margin-top: -40px; /* Subimos el main 60px hacia arriba (80px del header menos 20px del margen) */
 }
-
 
 /* Aplica una línea separadora en todas las secciones, excepto la última */
 main section:not(:last-child) {
