@@ -15,26 +15,63 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+
+-------------
+
+--------------------
+/* Establecer el estilo general del header */
 header {
   width: 100%;
-  height: 90px;
+  height: 80px; /* Ajustamos la altura del header a 80px */
   background: #f5f5f5;
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed; /* Fijar el header en la parte superior */
   top: 0;
-  z-index: 200;
- 
+  left: 0;
+  z-index: 1; /* Aseguramos que el header tenga un z-index inferior al del menú slide */
+  transition: height 0.3s; /* Agregamos una transición suave para la altura */
 }
 
-.header {
-  text-align: center;
+/* Estilos adicionales para cuando se haga scroll hacia abajo */
+header.scroll {
+  height: 60px; /* Ajustamos la altura del header a 60px cuando se hace scroll */
+}
+/* Estilos para el contenido principal del sitio */
+main {
+  margin-top: 100px; /* Agregamos un margen superior igual a la altura del header */
+}
+----------
+
+*{
+  border: solid 2px rgb(217, 16, 16);
 }
 
+
+-------------------------------------------
+/* Estilo para el título */
 .titulo {
   display: inline-block;
+  margin-top: -50px; /* Ajustamos el título hacia arriba con un margen negativo de 10px */
+}
+/* Estilo para el ícono del menú */
+#btn_open {
+  position: absolute;
+  top: 90px; /* Mover el ícono hacia arriba */
+  left: 300px; /* Mover el ícono hacia la izquierda */
+
+
+
+}
+section {
+  height: 100vh; /* La sección ocupará toda la altura de la ventana del navegador */
 }
 
+
+
+
+-----------------------------
+------------------
 .icon__menu {
   width: 50px;
   height: 100%;
@@ -221,21 +258,23 @@ a.selected {
   }
 }
 
-/* Establecer el estilo general del footer */
+/* Estilos del pie de página */
 footer {
-  position: sticky; /* Fijar la posición del footer */
-  bottom:100; /* Colocar el footer en la parte inferior */
-  right: 50; /* Posicionamos el footer en el margen derecho */
-  width: 100%; /* Aseguramos que el footer ocupe todo el ancho */
-  
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: #fc7300;
   color: #fff;
   padding: 10px;
   text-align: center;
   font-size: 14px;
   /* Ajusta el tamaño de fuente según sea necesario */
-  
-  /* Asegura que el footer esté por encima del header z-index: 999; aca no serviria*/
+  z-index: 999;
+  /* Asegura que el footer esté por encima del header */
+  margin-left: auto;
+  margin-right: 0;
+ 
 }
 /* ACA modificamos el tamañaño del footer*/
 main {
@@ -384,6 +423,7 @@ main {
   /* Color para los enlaces de correo electrónico */
 }
 
+
 .derechos {
   color: #000;
   font-weight: bold;
@@ -457,6 +497,8 @@ section {
   margin-top: 20px;
 }
 
+
+
 /* Mantiene la imagen del google maps en su lugar xd */
 .map-container img {
   max-width: 100%;
@@ -475,6 +517,9 @@ section {
   /* Agregamos el estilo overflow para ocultar el contenido que supere el tamaño del cuadro */
 }
 
+
+
+
 .contact-container {
   flex: 0 0 300px;
   margin-right: 20px;
@@ -490,6 +535,13 @@ section {
 .contact-container .contact-form {
   margin-top: 20px;
 }
+
+
+
+
+/*  No soy un codigo soy un Moustruooo pero mejorareeeeeeeeeeeeeee*/
+
+
 
 /* Estilos para las redes sociales (izquierda) */
 #redes-sociales {
@@ -536,6 +588,10 @@ i.fa {
   margin: 5px 0;
 }
 
+
+
+
+
 /* Media query para 756px o menos */
 @media screen and (max-width: 756px) {
   footer {
@@ -549,6 +605,7 @@ i.fa {
 
 
 }
+
 ************************************
 
 /* Media query para 756px o menos */
@@ -594,6 +651,7 @@ i.fa {
     border-radius: 5px;
   }
 }
+
 
 /* Estilos para el cuerpo del sitio */
 body {
@@ -675,6 +733,8 @@ body {
 
 footer-image-container
 /* Estilos para el contenido principal (si tienes contenido principal) */
+
+
 
 .grid-container {
   display: grid;
@@ -793,6 +853,7 @@ footer-image-container
   }
 }
 
+
 /* Centrar el título en el medio del contenedor */
 .titulo {
   display: flex;
@@ -812,9 +873,11 @@ footer-image-container
   color: black;
 }
 
+
 main {
   margin-top: -40px; /* Subimos el main 60px hacia arriba (80px del header menos 20px del margen) */
 }
+
 
 /* Aplica una línea separadora en todas las secciones, excepto la última */
 main section:not(:last-child) {
