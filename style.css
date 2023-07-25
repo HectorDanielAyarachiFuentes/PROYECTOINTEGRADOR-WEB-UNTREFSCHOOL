@@ -15,8 +15,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-
-
 -----------------------
 
 /* Establecer el estilo general del header */
@@ -471,8 +469,6 @@ section {
   margin-top: 20px;
 }
 
-
-
 /* Mantiene la imagen del google maps en su lugar xd */
 .map-container img {
   max-width: 100%;
@@ -491,9 +487,6 @@ section {
   /* Agregamos el estilo overflow para ocultar el contenido que supere el tamaño del cuadro */
 }
 
-
-
-
 .contact-container {
   flex: 0 0 300px;
   margin-right: 20px;
@@ -509,13 +502,6 @@ section {
 .contact-container .contact-form {
   margin-top: 20px;
 }
-
-
-
-
-/*  No soy un codigo soy un Moustruooo pero mejorareeeeeeeeeeeeeee*/
-
-
 
 /* Estilos para las redes sociales (izquierda) */
 #redes-sociales {
@@ -562,10 +548,6 @@ i.fa {
   margin: 5px 0;
 }
 
-
-
-
-
 /* Media query para 756px o menos */
 @media screen and (max-width: 756px) {
   footer {
@@ -579,8 +561,6 @@ i.fa {
 
 
 }
-
-************************************
 
 /* Media query para 756px o menos */
 @media screen and (max-width: 756px) {
@@ -625,7 +605,6 @@ i.fa {
     border-radius: 5px;
   }
 }
-
 
 /* Estilos para el cuerpo del sitio */
 body {
@@ -703,12 +682,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/*  No soy un codigo soy un Moustruooo pero mejorareeeeeeeeeeeeeee*/
-
 footer-image-container
 /* Estilos para el contenido principal (si tienes contenido principal) */
-
-
 
 .grid-container {
   display: grid;
@@ -827,7 +802,6 @@ footer-image-container
   }
 }
 
-
 /* Centrar el título en el medio del contenedor */
 .titulo {
   display: flex;
@@ -852,7 +826,6 @@ main {
   margin-top: -40px; /* Subimos el main 60px hacia arriba (80px del header menos 20px del margen) */
 }
 
-
 /* Aplica una línea separadora en todas las secciones, excepto la última */
 main section:not(:last-child) {
   border-bottom: 1px solid #ccc;
@@ -863,5 +836,6 @@ main section:not(:last-child) {
 main section {
   margin-bottom: 20px; /* Ajusta el espacio entre las secciones */
 }
+
 
 
