@@ -8,7 +8,6 @@
     <title>UntrefSchool</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-
 </head>
 <body id="body" onload="mostrarSeccion('quienes-somos-section')">
     <header class="header">
@@ -17,7 +16,6 @@
         </div>
         <a href="#" onclick="mostrarTodasLasSecciones()" class="titulo"><strong>UntrefSchool</strong></a>
     </header>
-
     <div class="menu__side" id="menu_side">
         <div class="name__page">
             <i class="fa-brands fa-stack-overflow fa-flip"></i>
@@ -284,10 +282,8 @@
         </div>
     </footer>
     <button id="scroll-to-top" style="display: block;">↑</button>
-
     <script>
         let currentSection = 0;
-
         function hideSections() {
             const sections = document.querySelectorAll('main section');
             sections.forEach((section, index) => {
@@ -296,7 +292,6 @@
                 }
             });
         }
-
         function showSection(sectionId) {
             const targetSection = document.getElementById(sectionId);
             if (targetSection) {
@@ -306,7 +301,6 @@
                 scrollToTop();
             }
         }
-
         function mostrarTodasLasSecciones() {
             const sections = document.querySelectorAll('main section');
             sections.forEach((section, index) => {
@@ -318,22 +312,18 @@
             });
             scrollToTop();
         }
-
         function scrollToTop() {
             const mainElement = document.querySelector('main');
             mainElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-
         window.onload = () => {
             hideSections();
             showSection('quienes-somos-section');
         };
-
         const headerTitle = document.querySelector('.titulo');
         headerTitle.addEventListener('click', () => {
             mostrarTodasLasSecciones();
         });
-
         const menuOptions = document.querySelectorAll('.options__menu a');
         menuOptions.forEach((option) => {
             option.addEventListener('click', (event) => {
@@ -342,19 +332,16 @@
                 showSection(targetSectionId);
             });
         });
-
         // Agrega un evento de clic al botón de "Volver arriba"
         const scrollToTopButton = document.getElementById('scroll-to-top');
         scrollToTopButton.addEventListener('click', () => {
             scrollToTop();
         });
-
         // Función para desplazarse hacia arriba de manera suave
         function scrollToTop() {
             const mainElement = document.querySelector('main');
             mainElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     </script>
-
 </body>
 </html>
