@@ -1,7 +1,10 @@
 # PROYECTOINTEGRADOR-WEB-UNTREFSCHOOL
 PROYECTOINTEGRADOR-WEB-UNTREFSCHOOL
-La otra version esta genial pero boostrap mejora aun mas.
 
-Nueva y revisada version con boostrap para mas responsive
+Esta version de prueba es una beta 
+https://hectordanielayarachifuentes.github.io/prueba-/
+
+
+Esta version es luego de conocer boostrap, MEJORADO!!!
+
 https://hectordanielayarachifuentes.github.io/PROYECTOINTEGRADOR-WEB-UNTREFSCHOOL-boostrap/
-123
