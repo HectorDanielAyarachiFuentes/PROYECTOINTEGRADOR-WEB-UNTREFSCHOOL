@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -7,16 +6,13 @@
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
-
 body {
   margin-left: 80px;
   margin-top: 80px;
   transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   font-family: "Poppins", sans-serif;
 }
-
 -----------------------
-
 /* Establecer el estilo general del header */
 header {
   width: 100%;
@@ -30,7 +26,6 @@ header {
   z-index: 1; /* Aseguramos que el header tenga un z-index inferior al del menú slide */
   transition: height 0.3s; /* Agregamos una transición suave para la altura */
 }
-
 /* Estilos adicionales para cuando se haga scroll hacia abajo */
 header.scroll {
   height: 60px; /* Ajustamos la altura del header a 60px cuando se hace scroll */
@@ -43,7 +38,6 @@ main {
 .titulo {
   display: inline-block;
 }
-
 .icon__menu {
   width: 50px;
   height: 100%;
@@ -52,13 +46,11 @@ main {
   align-items: center;
   transform: translateX(10px);
 }
-
 .icon__menu i {
   font-size: 20px;
   cursor: pointer;
   position: absolute;
 }
-
 .menu__side {
   width: 80px;
   height: 100%;
@@ -74,36 +66,30 @@ main {
   border-right: 20px solid #00425a;
   transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
-
 /*Ocultar scroll para chrome, safari y opera*/
 .menu__side::-webkit-scrollbar {
   display: none;
 }
-
 /*Ocultar scroll para IE, Edge y Firefox*/
 .menu__side {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 .name__page {
   padding: 20px 30px;
   display: flex;
   align-items: center;
   margin-top: 10px;
 }
-
 .name__page i {
   width: 20px;
   margin-right: 20px;
 }
-
 .options__menu {
   padding: 20px 30px;
   position: absolute;
   top: 80px;
 }
-
 .options__menu a {
   color: #ffffffb2;
   cursor: default;
@@ -111,33 +97,27 @@ main {
   position: relative;
   transition: color 300ms;
 }
-
 .options__menu a:hover {
   color: white;
 }
-
 .options__menu .option {
   padding: 20px 0px;
   display: flex;
   align-items: center;
   position: relative;
 }
-
 .options__menu .option i {
   width: 20px;
   margin-right: 20px;
   cursor: pointer;
 }
-
 .options__menu .option h4 {
   font-weight: 300;
   cursor: pointer;
 }
-
 a.selected {
   color: #fff;
 }
-
 .selected:before {
   content: "";
   width: 3px;
@@ -147,37 +127,29 @@ a.selected {
   top: 10%;
   left: -30px;
 }
-
 /*Clases para usar en JavaScript*/
-
 .body_move {
   margin-left: 250px;
 }
-
 .menu__side_move {
   width: 250px;
 }
-
 @media screen and (max-width: 760px) {
   .body_move {
     margin-left: 0px;
   }
-
   .menu__side_move {
     width: 80px;
     left: -80px;
   }
 }
-
 /* Ediccion de parrafos*/
-
 .contenido-1 {
   margin-top: 20px;
   text-align: justify;
   padding-left: 10px;
   padding-right: 10px;
 }
-
 /* Edicion de imagenes */
 .imagen-1 {
   max-width: 34%;
@@ -194,42 +166,35 @@ a.selected {
   /* Ajusta el valor según sea necesario para mover la imagen hacia abajo */
   float: left;
 }
-
 .my-image1:hover {
   margin-left: 0;
   /* Restablece el margen a 0 al pasar el cursor sobre la imagen */
 }
-
 /* Responsive prueba */
 .contenido-1 {
   display: flex;
   flex-direction: column;
 }
-
 .imagen-1 {
   margin-top: 10px;
   /* Ajusta el margen superior según sea necesario */
   max-width: 100%;
   /* Hace que la imagen sea responsive */
 }
-
 @media (min-width: 768px) {
   .contenido-1 {
     flex-direction: row;
   }
-
   .texto {
     margin-right: 10px;
     /* Ajusta el margen derecho según sea necesario */
   }
-
   .imagen-1 {
     margin-top: 0;
     max-width: 40%;
     /* Ajusta el ancho máximo según sea necesario */
   }
 }
-
 /* Estilos del pie de página */
 footer {
   position: relative;
@@ -246,14 +211,13 @@ footer {
   /* Asegura que el footer esté por encima del header */
   margin-left: auto;
   margin-right: 0;
- 
+
 }
 /* ACA modificamos el tamañaño del footer*/
 main {
   padding: 20px;
   margin-bottom: -20px;
 }
-
 /* Estilos de la flecha de scroll hacia arriba */
 #scroll-to-top {
   position: fixed;
@@ -271,21 +235,17 @@ main {
   z-index: 999;
   /* Asegura que la flecha esté por encima de otros elementos */
 }
-
 #scroll-to-top.show {
   display: block;
 }
-
 .hidden {
   display: none;
 }
-
 /* Estilos cards */
 .flex-container {
   display: flex;
   align-items: center;
 }
-
 .my-image1 {
   width: 200px;
   /* Ajusta el tamaño según tus necesidades */
@@ -293,11 +253,9 @@ main {
   margin-right: 10px;
   /* Ajusta el margen según tus necesidades */
 }
-
 .text {
   flex-grow: 1;
 }
-
 .card {
   border-radius: 20px;
   padding: 20px;
@@ -306,7 +264,6 @@ main {
   box-shadow: 2px 2px 6px #c30f0f;
   margin: 20px 10px;
 }
-
 /* Estilos para la segunda imagen */
 .my-image2 {
   width: 200px;
@@ -315,119 +272,92 @@ main {
   margin-right: 10px;
   /* Ajusta el margen según tus necesidades */
 }
-
 /*** Responsive */
 @media (width <48rem) {
-
   /*Tablets */
   main {
     width: 98%;
   }
-
   section {
     padding: 0rem;
   }
-
   section>div {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
   }
-
   .card,
   .formulario,
   footer>div {
     width: 100%;
   }
-
   .card {
     max-width: 31.25rem;
   }
-
   footer>div {
     margin-bottom: 1.25rem;
   }
-
   footer ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-
   .contacto {
     text-align: center;
   }
-
   footer {
     flex-wrap: wrap;
     flex-direction: column;
   }
 }
-
 @media (width <28.75rem) {
-
   /*smartphones */
   .bg-header {
     height: 37.5rem;
   }
 }
-
 /*Cambia los espaciados y colores del la seccion contactos. para mas responsive */
 .contacto {
   margin-bottom: 20px;
 }
-
 .direccion {
   color: #000;
   /* Color para la dirección */
 }
-
 .telefono {
   color: #000;
-
   /* Color para el teléfono */
 }
-
 .correo {
   color: #000;
-
   /* Color para los enlaces de correo electrónico */
 }
-
-
 .derechos {
   color: #000;
   font-weight: bold;
   /* Hacer el texto en negrita */
   /* Color para los enlaces de derechos */
 }
-
 /* Estilo para la clase "enlace" */
 .enlace {
   color: black;
   /* Cambiar el color del texto a negro */
-
   /* Otros estilos que desees aplicar */
 }
-
 /*estilo de formulario de mensajes*/
-
 section {
   margin: 40px 0 80px;
 }
-
 .contact-form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
   margin: 0 auto;
 }
-
 .contact-form label {
   margin-bottom: 5px;
 }
-
 .contact-form input,
 .contact-form textarea {
   margin-bottom: 10px;
@@ -435,7 +365,6 @@ section {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-
 .contact-form button {
   padding: 10px 20px;
   background-color: #4caf50;
@@ -444,37 +373,30 @@ section {
   border-radius: 3px;
   cursor: pointer;
 }
-
 .contact-form button:hover {
   background-color: #45a049;
 }
-
 .container {
   display: flex;
 }
-
 .contact-container {
   flex: 0 0 300px;
   margin-right: 20px;
   border: 1px solid #ccc;
   padding: 20px;
 }
-
 .contact-container h2 {
   margin-bottom: 10px;
   text-align: center;
 }
-
 .contact-container .contact-form {
   margin-top: 20px;
 }
-
 /* Mantiene la imagen del google maps en su lugar xd */
 .map-container img {
   max-width: 100%;
   max-height: 100%;
 }
-
 .map-container {
   flex: 1;
   border: 1px solid #ccc;
@@ -486,118 +408,96 @@ section {
   margin-top: 20px;
   /* Agregamos el estilo overflow para ocultar el contenido que supere el tamaño del cuadro */
 }
-
 .contact-container {
   flex: 0 0 300px;
   margin-right: 20px;
   border: 1px solid #ccc;
   padding: 20px;
 }
-
 .contact-container h2 {
   margin-bottom: 10px;
   text-align: center;
 }
-
 .contact-container .contact-form {
   margin-top: 20px;
 }
-
 /* Estilos para las redes sociales (izquierda) */
 #redes-sociales {
   flex: 1;
   text-align: left;
   /* Alinea las redes sociales a la izquierda */
 }
-
 /* Ajuste de márgenes y separación entre las redes sociales */
 #redes-sociales a {
   display: block;
   margin-bottom: 5px;
   /* Margen entre cada red social */
 }
-
 /* Estilos para los contactos (derecha) */
 #contactos {
   flex: 1;
   text-align: right;
   /* Alinea los contactos a la derecha */
 }
-
 /* Ajuste de márgenes para los contactos y teléfonos */
 .contacto {
   margin: 10px 0;
 }
-
 /* Ajuste de márgenes entre los íconos y los textos de los contactos y teléfonos */
 .contacto i.fa {
   margin-right: 5px;
 }
-
 /* Estilos de los íconos */
 i.fa {
   margin-right: 5px;
 }
-
 #contactos .correo {
   color: blue;
 }
-
 /* Ajuste de márgenes para el texto de derechos reservados y los demás elementos en el centro */
 #derechos-reservados p {
   margin: 5px 0;
 }
-
 /* Media query para 756px o menos */
 @media screen and (max-width: 756px) {
   footer {
     flex-direction: column;
   }
-
   .footer-right {
     margin-top: 10px;
     /* Margen superior para separar los contactos de la imagen */
   }
-
-
 }
-
 /* Media query para 756px o menos */
 @media screen and (max-width: 756px) {
   footer {
     flex-direction: column;
   }
-
   .footer-right {
     margin-top: 10px;
     /* Margen superior para separar los contactos de la imagen */
   }
-
   .footer-image-container {
     position: sticky;
     /* Vuelve a la posición normal en el flujo del documento */
     margin-bottom: 10px;
     /* Margen inferior para separar la imagen de los contactos */
   }
-
   /* Ajuste de márgenes para los contactos y teléfonos en pantallas pequeñas */
   #contactos {
     text-align: center;
     /* Centra los contactos en pantallas pequeñas */
   }
-
   .contacto {
     margin: 10px 0;
     /* Márgenes entre los elementos de contacto */
   }
-
   /* Nuevos estilos para mantener la imagen centrada con el main a 320px */
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .footer-image-container img {
     width: 100%;
     max-width: 2000px;
@@ -605,7 +505,6 @@ i.fa {
     border-radius: 5px;
   }
 }
-
 /* Estilos para el cuerpo del sitio */
 body {
   margin-left: 80px;
@@ -613,7 +512,6 @@ body {
   transition: margin-right 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   font-family: "Poppins", sans-serif;
 }
-
 /* Media query para 650px o menos */
 @media screen and (max-width: 650px) {
   body {
@@ -623,17 +521,14 @@ body {
     /* Mantiene el margen superior en pantallas más pequeñas */
   }
 }
-
 *********************************************
-
-/*  No soy un codigo soy un Moustruooo pero 
+/*  No soy un codigo soy un Moustruooo pero
 /* Ajuste de márgenes y separación entre las redes sociales */
 #redes-sociales a {
   display: block;
   margin-bottom: 5px;
   /* Margen entre cada red social */
 }
-
 /* Estilos para el texto de derechos reservados (centro) */
 #derechos-reservados {
   flex: 2;
@@ -642,38 +537,31 @@ body {
   margin-right: 220px;
   /* Margen derecho para separar de los contactos */
 }
-
 /* Ajuste de márgenes para el texto de derechos reservados */
 #derechos-reservados p {
   margin: 5px 0;
 }
-
 /* Estilos para los contactos (derecha) */
 #contactos {
   flex: 1;
   text-align: right;
   /* Alinea los contactos a la derecha */
 }
-
 /* Ajuste de márgenes para los contactos y teléfonos */
 .contacto {
   margin: 10px 0;
 }
-
 /* Ajuste de márgenes entre los íconos y los textos de los contactos y teléfonos */
 .contacto i.fa {
   margin-right: 5px;
 }
-
 /* Estilos de los íconos */
 i.fa {
   margin-right: 5px;
 }
-
 .correo {
   color: #000;
 }
-
 /* Estilos para el cuerpo del sitio */
 body {
   margin-left: 80px;
@@ -681,10 +569,8 @@ body {
   transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   font-family: "Poppins", sans-serif;
 }
-
 footer-image-container
 /* Estilos para el contenido principal (si tienes contenido principal) */
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -697,7 +583,6 @@ footer-image-container
   margin-right: 40px;
   /* Agregamos un margen derecho de 40px */
 }
-
 /* Ajustamos el tamaño de los items para que sean cuadrados */
 .item {
   border: 1px solid #e8ebe8;
@@ -709,13 +594,11 @@ footer-image-container
   margin: 0 auto;
   /* Centramos los items horizontalmente */
 }
-
 .item img {
   max-width: 100%;
   height: auto;
   /* Para mantener la proporción de la imagen */
 }
-
 /* Convertimos el primer item en un contenedor flex con dirección columna */
 .item:first-child {
   display: flex;
@@ -723,12 +606,10 @@ footer-image-container
   align-items: center;
   /* Centramos los elementos verticalmente */
 }
-
 .footer-left {
   margin-top: 20px;
   /* Añadimos un margen superior a la sección de redes sociales */
 }
-
 .footer-left a {
   display: block;
   margin-bottom: 20px;
@@ -736,20 +617,16 @@ footer-image-container
   color: #fff;
   /* Cambiamos el color del texto a blanco */
 }
-
 .footer-left i {
   scroll-margin-left: 50px;
   /* Ajustamos el margen derecho del ícono */
 }
-
 @media (min-width: 768px) {
-
   /* Cambiar el layout a 3 columnas en dispositivos más grandes */
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, );
@@ -762,7 +639,6 @@ footer-image-container
   background-color:   #fc73;
   ;
 }
-
 @media (max-width: 768px) {
   /* Cambiar el layout a una columna en dispositivos más pequeños */
   .grid-container {
@@ -772,28 +648,23 @@ footer-image-container
     margin: 0 auto; /* Centramos los grids horizontalmente en dispositivos pequeños */
   }
 }
-
 /*media queries para que no se pierda el mapa probar varibles, se puedo hacer mejor? si pero es lo que encontre*/
-
 .map-container img {
   max-width: 100%;
   max-height: 100%;
 }
-
 @media (max-width: 320px) {
   .map-container img {
     width: 100%;
     height: auto;
   }
 }
-
 @media (max-width: 480px) {
   .map-container iframe {
     width: 200px;
     height: 150px;
   }
 }
-
   /* Ajuste de posición del título "UntrefSchool" en la vista móvil */
 @media (max-width: 768px) {
   .titulo {
@@ -801,7 +672,6 @@ footer-image-container
     margin-bottom: 0;
   }
 }
-
 /* Centrar el título en el medio del contenedor */
 .titulo {
   display: flex;
@@ -809,33 +679,24 @@ footer-image-container
   align-items: center;
   height: 100%; /* Asegura que ocupa todo el alto del contenedor */
 }
-
 /* Estilo adicional para el texto en negrita */
 .titulo strong {
   font-weight: bold;
 }
-
 /* Tamaño de fuente más grande para el título */
 .titulo strong {
   font-size: 24px; /* Puedes ajustar este valor según desees */
   color: black;
 }
-
-
 main {
   margin-top: -40px; /* Subimos el main 60px hacia arriba (80px del header menos 20px del margen) */
 }
-
 /* Aplica una línea separadora en todas las secciones, excepto la última */
 main section:not(:last-child) {
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px; /* Ajusta el espacio entre la línea separadora y el contenido de la sección */
 }
-
 /* Opcionalmente, puedes agregar márgenes para separar aún más las secciones */
 main section {
   margin-bottom: 20px; /* Ajusta el espacio entre las secciones */
 }
-
-
-
