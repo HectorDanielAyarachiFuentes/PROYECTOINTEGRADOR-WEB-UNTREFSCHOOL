@@ -624,3 +624,21 @@ h3 {
     width: 100%; /* Ocupar todo el ancho de la pantalla */
   }
 }
+
+.footer {
+  justify-content: flex-start; /* Alineación hacia la izquierda */
+  padding-left: 80px; /* Mover el header 10px a la izquierda */
+}
+
+@media screen and (max-width: 769px) {https://github.com/HectorDanielAyarachiFuentes/PROYECTOINTEGRADOR-WEB-UNTREFSCHOOL/blob/main/Imagenes/escuela%201.jpg?raw=true
+  .footer {
+    display: static;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .footer {
+    display: block;
+    width: 100%; /* Ocupar todo el ancho de la pantalla */
+  }
+}
