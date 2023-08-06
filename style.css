@@ -370,3 +370,75 @@ section {
   max-width: 100%;
   height: auto;
 }
+
+/* Ajuste de posición del título "UntrefSchool" en la vista móvil */
+@media (max-width: 768px) {
+  .titulo {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+
+/* Card styles */
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+.my-image1 {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+}
+.text {
+  flex-grow: 1;
+}
+.card {
+  border-radius: 20px;
+  padding: 20px;
+  width: rem;
+  border: 1px solid #893131;
+  box-shadow: 2px 2px 6px #c30f0f;
+  margin: 20px 10px;
+}
+/* Styles for the second image */
+.my-image2 {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+}
+/* Responsive media queries */
+@media (max-width: 48rem) {
+  /* Tablets */
+  main {
+    width: 98%;
+  }
+  section {
+    padding: 0rem;
+  }
+  section > div {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card,
+  .formulario,
+  footer > div {
+    width: 100%;
+  }
+  .card {
+    max-width: 31.25rem;
+  }
+  footer > div {
+    margin-bottom: 1.25rem;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /*/
