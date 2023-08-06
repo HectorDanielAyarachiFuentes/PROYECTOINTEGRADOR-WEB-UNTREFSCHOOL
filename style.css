@@ -442,3 +442,17 @@ section {
     align-items: center;
   }
   /*/
+
+	/* Personalización del margen izquierdo o derecho en diferentes tamaños de pantalla */
+@media (min-width: 769px) {
+  /* Personaliza el margen izquierdo o derecho según tus preferencias */
+  .titulo132.left-margin {
+    margin-left: 20px; /* Ejemplo: margen izquierdo de 20px */
+    margin-right: auto; /* Reinicia el margen derecho a "auto" para mantener el centrado */
+  }
+
+  .titulo132.right-margin {
+    margin-left: auto; /* Reinicia el margen izquierdo a "auto" para mantener el centrado */
+    margin-right: 20px; /* Ejemplo: margen derecho de 20px */
+  }
+}
