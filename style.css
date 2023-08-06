@@ -255,51 +255,9 @@ footer {
   height: auto;
   margin-right: 10px;
 }
-/* Responsive media queries */
-@media (max-width: 48rem) {
-  /* Tablets */
-  main {
-    width: 98%;
-  }
-  section {
-    padding: 0rem;
-  }
-  section > div {
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-  }
-  .card,
-  .formulario,
-  footer > div {
-    width: 100%;
-  }
-  .card {
-    max-width: 31.25rem;
-  }
-  footer > div {
-    margin-bottom: 1.25rem;
-  }
-  footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .contacto {
-    text-align: center;
-  }
-  footer {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-}
-@media (max-width: 28.75rem) {
-  /* Smartphones */
-  .bg-header {
-    height: 37.5rem;
-  }
-}
+
+
+/*/
 /* Contact section styles */
 .contacto {
   margin-bottom: 20px;
@@ -386,259 +344,29 @@ section {
   max-width: 100%;
   max-height: 100%;
 }
-/* Estilos para las redes sociales (izquierda) */
-#redes-sociales {
-  flex: 1;
-  text-align: left;
-}
-/* Ajuste de márgenes y separación entre las redes sociales */
-#redes-sociales a {
-  display: block;
-  margin-bottom: 5px;
-}
-/* Estilos para los contactos (derecha) */
-#contactos {
-  flex: 1;
-  text-align: right;
-}
-/* Ajuste de márgenes para los contactos y teléfonos */
-.contacto {
-  margin: 10px 0;
-}
-/* Ajuste de márgenes entre los íconos y los textos de los contactos y teléfonos */
-.contacto i.fa {
-  margin-right: 5px;
-}
-/* Estilos de los íconos */
-i.fa {
-  margin-right: 5px;
-}
-/* Estilos para los correos en el contenedor de contactos */
-#contactos .correo {
-  color: blue;
-}
-/* Ajuste de márgenes para el texto de derechos reservados y los demás elementos en el centro */
-#derechos-reservados p {
-  margin: 5px 0;
-}
-/* Media query para pantallas de 756px o menos */
-@media screen and (max-width: 756px) {
-  footer {
-    flex-direction: column;
-  }
-  .footer-right {
-    margin-top: 10px;
-  }
-}
-/* Media query para pantallas de 756px o menos */
-@media screen and (max-width: 756px) {
-  footer {
-    flex-direction: column;
-  }
-  .footer-right {
-    margin-top: 10px;
-  }
-  .footer-image-container {
-    position: sticky;
-    margin-bottom: 10px;
-  }
-  #contactos {
-    text-align: center;
-  }
-  .contacto {
-    margin: 10px 0;
-  }
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-image-container img {
-    width: 100%;
-    max-width: 2000px;
-    height: auto;
-    border-radius: 5px;
-  }
-}
-/* Estilos para el cuerpo del sitio */
-body {
-  margin-left: 80px;
-  margin-top: 80px;
-  transition: margin-right 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  font-family: "Poppins", sans-serif;
-}
-/* Media query para pantallas de 650px o menos */
-@media screen and (max-width: 650px) {
-  body {
-    margin-left: 0;
-    margin-top: 80px;
-  }
-}
-/*********************************************
-/* Agrega aquí los estilos para el contenido principal (si tienes contenido principal) */
+
 /* Estilos para el grid container del footer */
-.grid-container {
+.parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 190px;
-  text-align: center;
-  margin: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  }
+
+  .item { grid-area: 1 / 3 / 2 / 4; }
+  .item { grid-area: 2 / 2 / 3 / 3; }
+  .item { grid-area: 2 / 4 / 3 / 5; }
+
 /* Ajustamos el tamaño de los items para que sean cuadrados */
 .item {
   border: 1px solid #e8ebe8;
   padding: 20px;
   width: 200px;
   height: 200px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .item img {
   max-width: 100%;
   height: auto;
-}
-/* Convertimos el primer item en un contenedor flex con dirección columna */
-.item:first-child {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* Estilos para la sección izquierda del footer */
-.footer-left {
-  margin-top: 20px;
-}
-.footer-left a {
-  display: block;
-  margin-bottom: 20px;
-  text-decoration: none;
-  color: #fff;
-}
-.footer-left i {
-  scroll-margin-left: 50px;
-}
-@media (min-width: 768px) {
-  /* Cambiar el layout a 3 columnas en dispositivos más grandes */
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-/* Cambiar el color de los tres grids del footer */
-.item {
-  padding: 10px;
-  text-align: center;
-  background-color: #fc73;
-}
-@media (max-width: 768px) {
-  /* Cambiar el layout a una columna en dispositivos más pequeños */
-  .grid-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-}
-/* Media queries para ajustar el mapa a diferentes tamaños de pantalla */
-.map-container img {
-  max-width: 100%;
-  max-height: 100%;
-}
-@media (max-width: 320px) {
-  .map-container img {
-    width: 100%;
-    height: auto;
-  }
-}
-@media (max-width: 480px) {
-  .map-container iframe {
-    width: 200px;
-    height: 150px;
-  }
-}
-/* Ajuste de posición del título "UntrefSchool" en la vista móvil */
-@media (max-width: 768px) {
-  .titulo {
-    margin-top: 20px;
-    margin-bottom: 0;
-  }
-}
-/* Centrar el título en el medio del contenedor */
-.titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-/* Estilo adicional para el texto en negrita */
-.titulo strong {
-  font-weight: bold;
-}
-/* Tamaño de fuente más grande para el título */
-.titulo strong {
-  font-size: 24px;
-  color: black;
-}
-/* Ajuste de posición del "main" para evitar que se solape con el "header" */
-main {
-  margin-top: -40px;
-}
-/* Aplica una línea separadora en todas las secciones, excepto la última */
-main section:not(:last-child) {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
-}
-/* Opcionalmente, puedes agregar márgenes para separar aún más las secciones */
-main section {
-  margin-bottom: 20px;
-}
-/* margenes entre titulo,imagen,y texto*/
-.flex-container {
-  display: flex;
-  gap: 20px; /* Ajusta el valor según desees */
-}
-.my-image2 {
-  max-width: 200px; /* Establece el ancho deseado para la imagen */
-}
-.text {
-  flex: 1;
-}
-h3 {
-  margin: 0 0 10px 0; /* Agrega margen en la parte inferior del elemento h3 (10px en este ejemplo) */
-}
-
-
-.footer {
-  justify-content: flex-start; /* Alineación hacia la izquierda */
-  padding-left: 80px; /* Mover el header 10px a la izquierda */
-}
-
-@media screen and (max-width: 773px) {
-  .footer {
-    display: static;
-  }
-}
-
-@media screen and (min-width: 774px) {
-  .footer {
-    display: block;
-    width: 100%; /* Ocupar todo el ancho de la pantalla */
-  }
-}
-
-.footer {
-  justify-content: flex-start; /* Alineación hacia la izquierda */
-  padding-left: 80px; /* Mover el header 10px a la izquierda */
-}
-
-@media screen and (max-width: 769px) {https://github.com/HectorDanielAyarachiFuentes/PROYECTOINTEGRADOR-WEB-UNTREFSCHOOL/blob/main/Imagenes/escuela%201.jpg?raw=true
-  .footer {
-    display: static;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .footer {
-    display: block;
-    width: 100%; /* Ocupar todo el ancho de la pantalla */
-  }
 }
