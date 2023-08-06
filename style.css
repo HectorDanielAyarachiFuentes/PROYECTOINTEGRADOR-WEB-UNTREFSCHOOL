@@ -500,19 +500,15 @@ footer {
   }
 
   footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    bottom: 0;
-    left: 0;
     width: 100%;
     background-color: #179f0a;
     color: #fff;
-    padding: -900px;
-    /* Aumentamos el padding para aumentar la altura */
-    text-align: center;
     font-size: 14px;
     z-index: 999;
-    margin-left: auto;
-    margin-right: 0;
   }
 }
 
