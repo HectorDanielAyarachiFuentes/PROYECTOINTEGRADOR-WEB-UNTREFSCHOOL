@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
 /* General styles */
 * {
   margin: 0;
@@ -7,13 +8,13 @@
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
+
 body {
   margin-left: 80px;
-  margin-top: 80px;
-  transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  font-family: "Poppins", sans-serif;
+  margin-right: 100x;
+  margin-top: 20px;
 }
-/* Header styles */
+
 /* Estilos base para el header */
 .header {
   width: 100%;
@@ -26,34 +27,233 @@ body {
   left: 4;
   z-index: 1;
   transition: height 0.3s;
-  margin-right: 50px; /* Ajusta el valor del margen derecho según tu preferencia */
+  margin-right: 50px;
+  /* Ajusta el valor del margen derecho según tu preferencia */
 }
-/* Estilos para el icono del menú */
-.icon__menu {
-  /* Agrega aquí los estilos que necesites para el icono del menú */
-}
-/* Estilos para la resolución 320px */
-@media screen and (max-width: 320px) {
-  .header {
-    display: static;
-    justify-content: flex-start; /* Alineación hacia la izquierda */
-    padding-left: 80px; /* Mover el header 10px a la izquierda */
-  }
-  .icon__menu {
-    margin-left: 0px; /* Mover el icono del menú 10px a la izquierda */
-  }
-}
-/* Additional header styles for when scrolling down */
-header.scroll {
-  height: 60px;
-}
-/* Styles for the main content of the site */
+
+/*Main****/
 main {
+  width: 100%;
   margin-top: 100px;
   padding: 20px;
   margin-bottom: -20px;
 }
-/* Sidebar menu styles */
+
+/* Imagen estilos */
+.imagen-1 {
+  max-width: 34%;
+  height: auto;
+  margin-left: -9px;
+  margin-right: 20px;
+  margin-bottom: auto;
+  margin-top: 100px;
+  float: left;
+}
+
+.my-image1:hover {
+  margin-left: 0;
+}
+
+/* Responsive styles */
+.contenido-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagen-1 {
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contenido-1 {
+    flex-direction: row;
+  }
+
+  .texto {
+    margin-right: 10px;
+  }
+
+  .imagen-1 {
+    margin-top: 0;
+    max-width: 40%;
+  }
+}
+
+.text {
+  flex-grow: 1;
+}
+
+
+
+/* Card styles */
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.my-image1 {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.text {
+  flex-grow: 1;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 20px;
+  width: rem;
+  border: 1px solid #893131;
+  box-shadow: 2px 2px 6px #c30f0f;
+  margin: 20px 10px;
+}
+
+/* Styles for the second image */
+.my-image2 {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Contact section styles */
+.contacto {
+  margin-bottom: 20px;
+}
+
+.direccion {
+  color: #000;
+}
+
+.telefono {
+  color: #000;
+}
+
+.correo {
+  color: #000;
+}
+
+.derechos {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Styles for links */
+.enlace {
+  color: black;
+}
+
+/* Form styles for messages */
+section {
+  margin: 40px 0 80px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  display: flex;
+}
+
+/* Estilos para el contenedor de contacto */
+.contact-container {
+  flex: 0 0 300px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.contact-container h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-container .contact-form {
+  margin-top: 20px;
+}
+
+/* Estilos para el contenedor del mapa */
+.map-container {
+  flex: 1;
+  border: 1px solid #ccc;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.map-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* mejora a 320 px el responsive del are de contactos*/
+@media (max-width: 320px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-container,
+  .map-container {
+    width: 280px;
+    height: 420px;
+    margin-bottom: 20px;
+    /* Cambiado de 90px a 20px */
+  }
+}
+
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Barra lateral */
 .menu__side {
   width: 80px;
   height: 100%;
@@ -69,15 +269,18 @@ main {
   border-right: 20px solid #00425a;
   transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
+
 /* Hide scrollbar for Chrome, Safari, and Opera */
 .menu__side::-webkit-scrollbar {
   display: none;
 }
+
 /* Hide scrollbar for IE, Edge, and Firefox */
 .menu__side {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 /* Styles for the page name in the sidebar */
 .name__page {
   padding: 20px 30px;
@@ -85,16 +288,19 @@ main {
   align-items: center;
   margin-top: 10px;
 }
+
 .name__page i {
   width: 20px;
   margin-right: 20px;
 }
+
 /* Styles for the menu options in the sidebar */
 .options__menu {
   padding: 20px 30px;
   position: absolute;
   top: 80px;
 }
+
 .options__menu a {
   color: #ffffffb2;
   cursor: default;
@@ -102,27 +308,33 @@ main {
   position: relative;
   transition: color 300ms;
 }
+
 .options__menu a:hover {
   color: white;
 }
+
 .options__menu .option {
   padding: 20px 0px;
   display: flex;
   align-items: center;
   position: relative;
 }
+
 .options__menu .option i {
   width: 20px;
   margin-right: 20px;
   cursor: pointer;
 }
+
 .options__menu .option h4 {
   font-weight: 300;
   cursor: pointer;
 }
+
 a.selected {
   color: #fff;
 }
+
 .selected:before {
   content: "";
   width: 3px;
@@ -132,66 +344,30 @@ a.selected {
   top: 10%;
   left: -30px;
 }
-/* Classes for use in JavaScript */
+
+/* Permite mover la barra*/
 .body_move {
   margin-left: 250px;
 }
+
 .menu__side_move {
   width: 250px;
 }
+
 @media screen and (max-width: 760px) {
+
   /* Tablets */
   .body_move {
     margin-left: 0px;
   }
+
   .menu__side_move {
     width: 80px;
     left: -80px;
   }
 }
-/* Paragraph styles */
-.contenido-1 {
-  margin-top: 20px;
-  text-align: justify;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-/* Image styles */
-.imagen-1 {
-  max-width: 34%;
-  height: auto;
-  margin-left: -33px;
-  margin-right: 20px;
-  margin-bottom: auto;
-  transition: margin-left 0.2s ease;
-  margin-top: 100px;
-  float: left;
-}
-.my-image1:hover {
-  margin-left: 0;
-}
-/* Responsive styles */
-.contenido-1 {
-  display: flex;
-  flex-direction: column;
-}
-.imagen-1 {
-  margin-top: 10px;
-  max-width: 100%;
-}
-@media (min-width: 768px) {
-  .contenido-1 {
-    flex-direction: row;
-  }
-  .texto {
-    margin-right: 10px;
-  }
-  .imagen-1 {
-    margin-top: 0;
-    max-width: 40%;
-  }
-}
-/* Footer styles */
+
+/* Estilos de Footer*/
 footer {
   position: relative;
   bottom: 0;
@@ -206,11 +382,93 @@ footer {
   margin-left: auto;
   margin-right: 0;
 }
+
+/* Estilos para el grid container del footer */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+  margin: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* Ajustamos el tamaño de los items para que sean cuadrados */
+.item {
+  border: 1px solid #e8ebe8;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Cambiar a columnas verticales en dispositivos más pequeños */
+@media (max-width: 768px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: calc(100% - 40px);
+    /* Resta 20px del ancho total para el margen derecho */
+    margin-right: 20px;
+    /* Agrega un margen derecho de 20px */
+  }
+}
+
+
+/*/
+/* Media query para pantalla con un ancho de 320px */
+@media (max-width: 320px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Alinea el texto al centro */
+  }
+
+  .my-image2 {
+    margin-bottom: 10px;
+    /* Añade un margen inferior para separar la imagen del texto */
+  }
+
+  .text {
+    padding: 10px;
+    /* Agrega un espacio alrededor del texto para mayor claridad */
+  }
+}
+
+
+@media (max-width: 400px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Alinea el texto al centro */
+  }
+
+  .my-image2 {
+    margin-bottom: 10px;
+    /* Añade un margen inferior para separar la imagen del texto */
+  }
+
+  .text {
+    padding: 10px;
+    /* Agrega un espacio alrededor del texto para mayor claridad */
+  }
+}
+
+/*Flecha arriba*/
 /* Scroll to top button */
 #scroll-to-top {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 40px;
   display: none;
   background-color: #1f8a70;
   color: #fff;
@@ -222,437 +480,40 @@ footer {
   cursor: pointer;
   z-index: 999;
 }
+
 #scroll-to-top.show {
   display: block;
 }
+
 .hidden {
   display: none;
 }
-/* Card styles */
-.flex-container {
-  display: flex;
-  align-items: center;
-}
-.my-image1 {
-  width: 200px;
-  height: auto;
-  margin-right: 10px;
-}
-.text {
-  flex-grow: 1;
-}
-.card {
-  border-radius: 20px;
-  padding: 20px;
-  width: rem;
-  border: 1px solid #893131;
-  box-shadow: 2px 2px 6px #c30f0f;
-  margin: 20px 10px;
-}
-/* Styles for the second image */
-.my-image2 {
-  width: 200px;
-  height: auto;
-  margin-right: 10px;
-}
-/* Responsive media queries */
-@media (max-width: 48rem) {
-  /* Tablets */
-  main {
-    width: 98%;
-  }
-  section {
-    padding: 0rem;
-  }
-  section > div {
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-  }
-  .card,
-  .formulario,
-  footer > div {
-    width: 100%;
-  }
-  .card {
-    max-width: 31.25rem;
-  }
-  footer > div {
-    margin-bottom: 1.25rem;
-  }
-  footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .contacto {
-    text-align: center;
-  }
-  footer {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-}
-@media (max-width: 28.75rem) {
-  /* Smartphones */
-  .bg-header {
-    height: 37.5rem;
-  }
-}
-/* Contact section styles */
-.contacto {
-  margin-bottom: 20px;
-}
-.direccion {
-  color: #000;
-}
-.telefono {
-  color: #000;
-}
-.correo {
-  color: #000;
-}
-.derechos {
-  color: #000;
-  font-weight: bold;
-}
-/* Styles for links */
-.enlace {
-  color: black;
-}
-/* Form styles for messages */
-section {
-  margin: 40px 0 80px;
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-}
-.contact-form label {
-  margin-bottom: 5px;
-}
-.contact-form input,
-.contact-form textarea {
-  margin-bottom: 10px;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-/* Estilos para el formulario de contacto */
-.contact-form button {
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-.contact-form button:hover {
-  background-color: #45a049;
-}
-/* Estilos para el contenedor principal */
-.container {
-  display: flex;
-}
-/* Estilos para el contenedor de contacto */
-.contact-container {
-  flex: 0 0 300px;
-  margin-right: 20px;
-  border: 1px solid #ccc;
-  padding: 20px;
-}
-.contact-container h2 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-.contact-container .contact-form {
-  margin-top: 20px;
-}
-/* Estilos para el contenedor del mapa */
-.map-container {
-  flex: 1;
-  border: 1px solid #ccc;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  margin-top: 20px;
-}
-.map-container img {
-  max-width: 100%;
-  max-height: 100%;
-}
-/* Estilos para las redes sociales (izquierda) */
-#redes-sociales {
-  flex: 1;
-  text-align: left;
-}
-/* Ajuste de márgenes y separación entre las redes sociales */
-#redes-sociales a {
-  display: block;
-  margin-bottom: 5px;
-}
-/* Estilos para los contactos (derecha) */
-#contactos {
-  flex: 1;
-  text-align: right;
-}
-/* Ajuste de márgenes para los contactos y teléfonos */
-.contacto {
-  margin: 10px 0;
-}
-/* Ajuste de márgenes entre los íconos y los textos de los contactos y teléfonos */
-.contacto i.fa {
-  margin-right: 5px;
-}
-/* Estilos de los íconos */
-i.fa {
-  margin-right: 5px;
-}
-/* Estilos para los correos en el contenedor de contactos */
-#contactos .correo {
-  color: blue;
-}
-/* Ajuste de márgenes para el texto de derechos reservados y los demás elementos en el centro */
-#derechos-reservados p {
-  margin: 5px 0;
-}
-/* Media query para pantallas de 756px o menos */
-@media screen and (max-width: 756px) {
-  footer {
-    flex-direction: column;
-  }
-  .footer-right {
-    margin-top: 10px;
-  }
-}
-/* Media query para pantallas de 756px o menos */
-@media screen and (max-width: 756px) {
-  footer {
-    flex-direction: column;
-  }
-  .footer-right {
-    margin-top: 10px;
-  }
-  .footer-image-container {
-    position: sticky;
-    margin-bottom: 10px;
-  }
-  #contactos {
-    text-align: center;
-  }
-  .contacto {
-    margin: 10px 0;
-  }
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-image-container img {
-    width: 100%;
-    max-width: 2000px;
-    height: auto;
-    border-radius: 5px;
-  }
-}
-/* Estilos para el cuerpo del sitio */
-body {
-  margin-left: 80px;
-  margin-top: 80px;
-  transition: margin-right 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  font-family: "Poppins", sans-serif;
-}
-/* Media query para pantallas de 650px o menos */
-@media screen and (max-width: 650px) {
+
+/* para el footer*/
+@media screen and (max-width: 320px) {
   body {
-    margin-left: 0;
-    margin-top: 80px;
+    position: relative;
   }
-}
-/*********************************************
-/* Agrega aquí los estilos para el contenido principal (si tienes contenido principal) */
-/* Estilos para el grid container del footer */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 190px;
-  text-align: center;
-  margin: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-/* Ajustamos el tamaño de los items para que sean cuadrados */
-.item {
-  border: 1px solid #e8ebe8;
-  padding: 20px;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-}
-.item img {
-  max-width: 100%;
-  height: auto;
-}
-/* Convertimos el primer item en un contenedor flex con dirección columna */
-.item:first-child {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* Estilos para la sección izquierda del footer */
-.footer-left {
-  margin-top: 20px;
-}
-.footer-left a {
-  display: block;
-  margin-bottom: 20px;
-  text-decoration: none;
-  color: #fff;
-}
-.footer-left i {
-  scroll-margin-left: 50px;
-}
-@media (min-width: 768px) {
-  /* Cambiar el layout a 3 columnas en dispositivos más grandes */
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
+
+  main {
+    /* Estilos del contenido principal */
   }
-}
-/* Cambiar el color de los tres grids del footer */
-.item {
-  padding: 10px;
-  text-align: center;
-  background-color: #fc73;
-}
-@media (max-width: 768px) {
-  /* Cambiar el layout a una columna en dispositivos más pequeños */
-  .grid-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-}
-/* Media queries para ajustar el mapa a diferentes tamaños de pantalla */
-.map-container img {
-  max-width: 100%;
-  max-height: 100%;
-}
-@media (max-width: 320px) {
-  .map-container img {
+
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-  }
-}
-@media (max-width: 480px) {
-  .map-container iframe {
-    width: 200px;
-    height: 150px;
-  }
-}
-/* Ajuste de posición del título "UntrefSchool" en la vista móvil */
-@media (max-width: 768px) {
-  .titulo {
-    margin-top: 20px;
-    margin-bottom: 0;
-  }
-}
-/* Centrar el título en el medio del contenedor */
-.titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-/* Estilo adicional para el texto en negrita */
-.titulo strong {
-  font-weight: bold;
-}
-/* Tamaño de fuente más grande para el título */
-.titulo strong {
-  font-size: 24px;
-  color: black;
-}
-/* Ajuste de posición del "main" para evitar que se solape con el "header" */
-main {
-  margin-top: -40px;
-}
-/* Aplica una línea separadora en todas las secciones, excepto la última */
-main section:not(:last-child) {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
-}
-/* Opcionalmente, puedes agregar márgenes para separar aún más las secciones */
-main section {
-  margin-bottom: 20px;
-}
-/* margenes entre titulo,imagen,y texto*/
-.flex-container {
-  display: flex;
-  gap: 20px; /* Ajusta el valor según desees */
-}
-.my-image2 {
-  max-width: 200px; /* Establece el ancho deseado para la imagen */
-}
-.text {
-  flex: 1;
-}
-h3 {
-  margin: 0 0 10px 0; /* Agrega margen en la parte inferior del elemento h3 (10px en este ejemplo) */
-}
-
-
-.footer {
-  justify-content: flex-start; /* Alineación hacia la izquierda */
-  padding-left: 80px; /* Mover el header 10px a la izquierda */
-}
-
-@media screen and (max-width: 773px) {
-  .footer {
-    display: static;
+    background-color: #179f0a;
+    color: #fff;
+    padding: -900px;
+    /* Aumentamos el padding para aumentar la altura */
+    text-align: center;
+    font-size: 14px;
+    z-index: 999;
+    margin-left: auto;
+    margin-right: 0;
   }
 }
 
-@media screen and (min-width: 774px) {
-  .footer {
-    display: block;
-    width: 100%; /* Ocupar todo el ancho de la pantalla */
-  }
-}
-
-.footer {
-  justify-content: flex-start; /* Alineación hacia la izquierda */
-  padding-left: 80px; /* Mover el header 10px a la izquierda */
-}
-
-@media screen and (max-width: 1200px) {https://github.com/HectorDanielAyarachiFuentes/PROYECTOINTEGRADOR-WEB-UNTREFSCHOOL/blob/main/Imagenes/escuela%201.jpg?raw=true
-  .footer {
-    display: static;
-    grid-gap: 20px;
-
-  }
-}
-@media screen and (min-width:769px) {
-  .footer {
-    display: block;
-    width: 100%; /* Ocupar todo el ancho de la pantalla */
-    grid-gap: 20px;
-
-
-  }
-}
-
-
-
-@media screen and (min-width:769px) {
-  .grid-container {
-    display: inline;
-    width: 100%; /* Ocupar todo el ancho de la pantalla */
-    grid-gap: 20px;
-  }
-}
+/*/
