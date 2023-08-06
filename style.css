@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
-
 /* General styles */
 * {
   margin: 0;
@@ -8,13 +7,11 @@
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
-
 body {
   margin-left: 80px;
   margin-right: 100x;
   margin-top: 20px;
 }
-
 /* Estilos base para el header */
 .header {
   width: 100%;
@@ -30,7 +27,6 @@ body {
   margin-right: 50px;
   /* Ajusta el valor del margen derecho según tu preferencia */
 }
-
 /*Main****/
 main {
   width: 100%;
@@ -38,7 +34,6 @@ main {
   padding: 20px;
   margin-bottom: -80px;
 }
-
 /* Imagen estilos */
 .imagen-1 {
   max-width: 34%;
@@ -49,57 +44,46 @@ main {
   margin-top: 100px;
   float: left;
 }
-
 .my-image1:hover {
   margin-left: 0;
 }
-
 /* Responsive styles */
 .contenido-1 {
   display: flex;
   flex-direction: column;
 }
-
 .imagen-1 {
   margin-top: 10px;
   max-width: 100%;
 }
-
 @media (min-width: 768px) {
   .contenido-1 {
     flex-direction: row;
   }
-
   .texto {
     margin-right: 10px;
   }
-
   .imagen-1 {
     margin-top: 0;
     max-width: 40%;
   }
 }
-
 .text {
   flex-grow: 1;
 }
-
 /* Card styles */
 .flex-container {
   display: flex;
   align-items: center;
 }
-
 .my-image1 {
   width: 200px;
   height: auto;
   margin-right: 10px;
 }
-
 .text {
   flex-grow: 1;
 }
-
 .card {
   border-radius: 20px;
   padding: 20px;
@@ -108,57 +92,46 @@ main {
   box-shadow: 2px 2px 6px #c30f0f;
   margin: 20px 10px;
 }
-
 /* Styles for the second image */
 .my-image2 {
   width: 200px;
   height: auto;
   margin-right: 10px;
 }
-
 /* Contact section styles */
 .contacto {
   margin-bottom: 20px;
 }
-
 .direccion {
   color: #000;
 }
-
 .telefono {
   color: #000;
 }
-
 .correo {
   color: #000;
 }
-
 .derechos {
   color: #000;
   font-weight: bold;
 }
-
 /* Styles for links */
 .enlace {
   color: black;
 }
-
 /* Form styles for messages */
 section {
   margin: 40px 0 80px;
 }
-
 .contact-form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
   margin: 0 auto;
 }
-
 .contact-form label {
   margin-bottom: 5px;
 }
-
 .contact-form input,
 .contact-form textarea {
   margin-bottom: 10px;
@@ -166,7 +139,6 @@ section {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-
 /* Estilos para el formulario de contacto */
 .contact-form button {
   padding: 10px 20px;
@@ -176,16 +148,13 @@ section {
   border-radius: 3px;
   cursor: pointer;
 }
-
 .contact-form button:hover {
   background-color: #45a049;
 }
-
 /* Estilos para el contenedor principal */
 .container {
   display: flex;
 }
-
 /* Estilos para el contenedor de contacto */
 .contact-container {
   flex: 0 0 300px;
@@ -193,16 +162,13 @@ section {
   border: 1px solid #ccc;
   padding: 20px;
 }
-
 .contact-container h2 {
   margin-bottom: 10px;
   text-align: center;
 }
-
 .contact-container .contact-form {
   margin-top: 20px;
 }
-
 /* Estilos para el contenedor del mapa */
 .map-container {
   flex: 1;
@@ -214,12 +180,10 @@ section {
   overflow: hidden;
   margin-top: 20px;
 }
-
 .map-container img {
   max-width: 100%;
   max-height: 100%;
 }
-
 /* mejora a 320 px el responsive del are de contactos*/
 @media (max-width: 320px) {
   .container {
@@ -227,7 +191,6 @@ section {
     flex-direction: column;
     align-items: center;
   }
-
   .contact-container,
   .map-container {
     width: 280px;
@@ -236,7 +199,6 @@ section {
     /* Cambiado de 90px a 20px */
   }
 }
-
 /* Barra lateral */
 .menu__side {
   width: 80px;
@@ -253,18 +215,15 @@ section {
   border-right: 20px solid #00425a;
   transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
-
 /* Hide scrollbar for Chrome, Safari, and Opera */
 .menu__side::-webkit-scrollbar {
   display: none;
 }
-
 /* Hide scrollbar for IE, Edge, and Firefox */
 .menu__side {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 /* Styles for the page name in the sidebar */
 .name__page {
   padding: 20px 30px;
@@ -272,19 +231,16 @@ section {
   align-items: center;
   margin-top: 10px;
 }
-
 .name__page i {
   width: 20px;
   margin-right: 20px;
 }
-
 /* Styles for the menu options in the sidebar */
 .options__menu {
   padding: 20px 30px;
   position: absolute;
   top: 80px;
 }
-
 .options__menu a {
   color: #ffffffb2;
   cursor: default;
@@ -292,33 +248,27 @@ section {
   position: relative;
   transition: color 300ms;
 }
-
 .options__menu a:hover {
   color: white;
 }
-
 .options__menu .option {
   padding: 20px 0px;
   display: flex;
   align-items: center;
   position: relative;
 }
-
 .options__menu .option i {
   width: 20px;
   margin-right: 20px;
   cursor: pointer;
 }
-
 .options__menu .option h4 {
   font-weight: 300;
   cursor: pointer;
 }
-
 a.selected {
   color: #fff;
 }
-
 .selected:before {
   content: "";
   width: 3px;
@@ -328,12 +278,10 @@ a.selected {
   top: 10%;
   left: -30px;
 }
-
 /* Permite mover la barra*/
 .body_move {
   margin-left: 250px;
 }
-
 .menu__side_move {
   width: 250px;
   background-image: repeating-linear-gradient(
@@ -443,19 +391,16 @@ a.selected {
     ),
     linear-gradient(90deg, rgb(21, 4, 29), rgb(57, 199, 205));
 }
-
 @media screen and (max-width: 760px) {
   /* Tablets */
   .body_move {
     margin-left: 0px;
   }
-
   .menu__side_move {
     width: 80px;
     left: -80px;
   }
 }
-
 /* Estilos de Footer*/
 footer {
   position: relative;
@@ -471,7 +416,6 @@ footer {
   margin-left: auto;
   margin-right: 0;
 }
-
 /* Estilos para el grid container del footer */
 .grid-container {
   display: grid;
@@ -482,7 +426,6 @@ footer {
   margin-left: 40px;
   margin-right: 40px;
 }
-
 /* Ajustamos el tamaño de los items para que sean cuadrados */
 .item {
   border: 1px solid #e8ebe8;
@@ -491,12 +434,10 @@ footer {
   height: 200px;
   margin: 0 auto;
 }
-
 .item img {
   max-width: 100%;
   height: auto;
 }
-
 /* Cambiar a columnas verticales en dispositivos más pequeños */
 @media (max-width: 768px) {
   .grid-container {
@@ -509,7 +450,6 @@ footer {
     /* Agrega un margen derecho de 20px */
   }
 }
-
 /*/
 /* Media query para pantalla con un ancho de 320px */
 @media (max-width: 320px) {
@@ -519,18 +459,15 @@ footer {
     text-align: center;
     /* Alinea el texto al centro */
   }
-
   .my-image2 {
     margin-bottom: 10px;
     /* Añade un margen inferior para separar la imagen del texto */
   }
-
   .text {
     padding: 10px;
     /* Agrega un espacio alrededor del texto para mayor claridad */
   }
 }
-
 @media (max-width: 400px) {
   .flex-container {
     flex-direction: column;
@@ -538,18 +475,15 @@ footer {
     text-align: center;
     /* Alinea el texto al centro */
   }
-
   .my-image2 {
     margin-bottom: 10px;
     /* Añade un margen inferior para separar la imagen del texto */
   }
-
   .text {
     padding: 10px;
     /* Agrega un espacio alrededor del texto para mayor claridad */
   }
 }
-
 /*Flecha arriba*/
 /* Scroll to top button */
 #scroll-to-top {
@@ -567,26 +501,21 @@ footer {
   cursor: pointer;
   z-index: 999;
 }
-
 #scroll-to-top.show {
   display: block;
 }
-
 .hidden {
   display: none;
 }
-
 /* para el footer*/
 @media screen and (max-width: 320px) {
   body {
     position: relative;
   }
-
   main {
     margin-top: 38px;
     margin-bottom: -80px;
   }
-
   footer {
     display: flex;
     justify-content: center;
@@ -620,7 +549,6 @@ footer {
     z-index: 999;
   }
 }
-
 .fondoheader {
   background-image: linear-gradient(
     352deg,
@@ -767,14 +695,12 @@ footer {
     ),
     linear-gradient(90deg, #ffffff, #ffffff);
 }
-
 /* para que las imagenes de los flex box no pierdan responsive*/
 @media (max-width: 320px) {
   .my-image2 {
     width: 100%; /* Ajustar el ancho al 100% */
     max-width: 100%; /* Establecer el ancho máximo al 100% */
   }
-
   .my-image1 {
     width: 100%; /* Ajustar el ancho al 100% */
     max-width: 100%; /* Establecer el ancho máximo al 100% */
