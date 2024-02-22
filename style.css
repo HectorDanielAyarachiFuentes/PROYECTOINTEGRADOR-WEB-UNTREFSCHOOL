@@ -656,3 +656,36 @@ footer {
     /* Establecer el ancho máximo al 100% */
   }
 }
+
+
+/* Link */
+.header p a{
+  position:relative;
+  left:93px;
+  z-index:-10;
+  color:#e4e4eb;
+  font-size:32px;
+ }
+ 
+ @media (max-width:320px){
+
+  /* Paragraph */
+  .header p{
+   display:inline-block;
+   transform:translatex(0px) translatey(0px) !important;
+   position:relative;
+   left:-75px;
+  }
+  
+ }
+
+/* Font Icon */
+#btn_open{
+  width:55px;
+  position:relative;
+  left:31px;
+  cursor: pointer; /* Agrega esta línea para cambiar el cursor a una manita */
+
+ }
+ 
+ 
