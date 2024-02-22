@@ -658,26 +658,8 @@ footer {
 }
 
 
-/* Link */
-.header p a{
-  position:relative;
-  left:93px;
-  z-index:-10;
-  color:#e4e4eb;
-  font-size:32px;
- }
- 
- @media (max-width:320px){
 
-  /* Paragraph */
-  .header p{
-   display:inline-block;
-   transform:translatex(0px) translatey(0px) !important;
-   position:relative;
-   left:-75px;
-  }
-  
- }
+ 
 
 /* Font Icon */
 #btn_open{
@@ -688,4 +670,16 @@ footer {
 
  }
  
- 
+ @media (max-width:320px){
+
+  /* Link */
+  .header p a{
+   position:relative;
+   left:-3px;
+   color:#dddde2;
+   font-size:29px;
+   text-align:left;
+   text-shadow:rgb(255, 0, 0) -1px 0px 0px, rgb(0, 255, 255) 1px 0px 0px;
+  }
+  
+ }
